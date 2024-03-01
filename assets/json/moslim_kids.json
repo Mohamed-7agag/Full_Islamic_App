@@ -1,0 +1,328 @@
+{
+  "id": 2837399,
+  "sourceid": 2837399,
+  "source_id": 2837399,
+  "title": "مالا يسع أطفال المسلمين جهله",
+  "description": "مشروع يحوي منهجًا يسيرًا سهلًا لمسائل لا يسع المسلم جهلها، يشمل مسائل العقيدة والفقه والسيرة والآداب والتفسير والحديث والأخلاق والأذكار، ويصلح للصغار خصوصًا ولكافة الأعمار وحديثي الإسلام",
+  "full_description": null,
+  "type": "videos",
+  "add_date": 1692465997,
+  "update_date": 1692465997,
+  "orginal_item": "yes",
+  "translation_language": "ar",
+  "source_language": "ar",
+  "display_box_mp4_default": 1,
+  "image": "https://d1.islamhouse.com/data/ar/ih_videos/pic/pic_index/2837399.jpg",
+  "locales": [
+    "ar"
+  ],
+  "locales-types": {
+    "ar": {
+      "locale": "ar",
+      "type": "videos"
+    }
+  },
+  "case": "published",
+  "importance_level": "high",
+  "hits": 606,
+  "prepared_by": [
+    {
+      "id": 2828042,
+      "source_id": 2828042,
+      "title": "يزن الغانم",
+      "type": "author",
+      "kind": "author",
+      "description": null,
+      "api_url": "https://api3.islamhouse.com/v3/paV29H2gm56kvLPy/main/get-author/2828042/ar/json"
+    }
+  ],
+  "attachments": [
+    {
+      "order": 0,
+      "size": "99.99 MB",
+      "extension_type": "MP4",
+      "description": "العقيدة - الجزء الأول",
+      "url": "https://d1.islamhouse.com/data/ar/ih_videos/mp4/chain/kids/ar_01_akidah.mp4"
+    },
+    {
+      "order": 1,
+      "size": "53.78 MB",
+      "extension_type": "MP4",
+      "description": "العقيدة - الجزء الثاني",
+      "url": "https://d1.islamhouse.com/data/ar/ih_videos/mp4/chain/kids/ar_02_akidah.mp4"
+    },
+    {
+      "order": 2,
+      "size": "116.29 MB",
+      "extension_type": "MP4",
+      "description": "العقيدة - الجزء الثالث",
+      "url": "https://d1.islamhouse.com/data/ar/ih_videos/mp4/chain/kids/ar_03_akidah.mp4"
+    },
+    {
+      "order": 3,
+      "size": "98.12 MB",
+      "extension_type": "MP4",
+      "description": "العقيدة - الجزء الرابع",
+      "url": "https://d1.islamhouse.com/data/ar/ih_videos/mp4/chain/kids/ar_04_akidah.mp4"
+    },
+    {
+      "order": 4,
+      "size": "92.4 MB",
+      "extension_type": "MP4",
+      "description": "العقيدة - الجزء الخامس",
+      "url": "https://d1.islamhouse.com/data/ar/ih_videos/mp4/chain/kids/ar_05_akidah.mp4"
+    },
+    {
+      "order": 5,
+      "size": "112.46 MB",
+      "extension_type": "MP4",
+      "description": "العقيدة - الجزء السادس",
+      "url": "https://d1.islamhouse.com/data/ar/ih_videos/mp4/chain/kids/ar_06_akidah.mp4"
+    },
+    {
+      "order": 6,
+      "size": "102.21 MB",
+      "extension_type": "MP4",
+      "description": "الفقه - الجزء الأول",
+      "url": "https://d1.islamhouse.com/data/ar/ih_videos/mp4/chain/kids/ar_01_alfiqh.mp4"
+    },
+    {
+      "order": 7,
+      "size": "98.29 MB",
+      "extension_type": "MP4",
+      "description": "الفقه - الجزء الثاني",
+      "url": "https://d1.islamhouse.com/data/ar/ih_videos/mp4/chain/kids/ar_02_alfiqh.mp4"
+    },
+    {
+      "order": 8,
+      "size": "115.77 MB",
+      "extension_type": "MP4",
+      "description": "الفقه - الجزء الثالث",
+      "url": "https://d1.islamhouse.com/data/ar/ih_videos/mp4/chain/kids/ar_03_alfiqh.mp4"
+    },
+    {
+      "order": 9,
+      "size": "168.95 MB",
+      "extension_type": "MP4",
+      "description": "الفقه - الجزء الرابع",
+      "url": "https://d1.islamhouse.com/data/ar/ih_videos/mp4/chain/kids/ar_04_alfiqh.mp4"
+    },
+    {
+      "order": 10,
+      "size": "84.96 MB",
+      "extension_type": "MP4",
+      "description": "الفقه - الجزء الخامس",
+      "url": "https://d1.islamhouse.com/data/ar/ih_videos/mp4/chain/kids/ar_05_alfiqh.mp4"
+    },
+    {
+      "order": 11,
+      "size": "82.53 MB",
+      "extension_type": "MP4",
+      "description": "الفقه - الجزء السادس",
+      "url": "https://d1.islamhouse.com/data/ar/ih_videos/mp4/chain/kids/ar_06_alfiqh.mp4"
+    },
+    {
+      "order": 12,
+      "size": "52.74 MB",
+      "extension_type": "MP4",
+      "description": "الفقه - الجزء السادس",
+      "url": "https://d1.islamhouse.com/data/ar/ih_videos/mp4/chain/kids/ar_07_alfiqh.mp4"
+    },
+    {
+      "order": 13,
+      "size": "65.67 MB",
+      "extension_type": "MP4",
+      "description": "السيرة النبوية - الجزء الأول",
+      "url": "https://d1.islamhouse.com/data/ar/ih_videos/mp4/chain/kids/ar_01_sirah.mp4"
+    },
+    {
+      "order": 14,
+      "size": "78.02 MB",
+      "extension_type": "MP4",
+      "description": "السيرة النبوية - الجزء الثاني",
+      "url": "https://d1.islamhouse.com/data/ar/ih_videos/mp4/chain/kids/ar_02_sirah.mp4"
+    },
+    {
+      "order": 15,
+      "size": "68.05 MB",
+      "extension_type": "MP4",
+      "description": "السيرة النبوية - الجزء الثالث",
+      "url": "https://d1.islamhouse.com/data/ar/ih_videos/mp4/chain/kids/ar_03_sirah.mp4"
+    },
+    {
+      "order": 16,
+      "size": "99.69 MB",
+      "extension_type": "MP4",
+      "description": "التفسير - الجزء الأول",
+      "url": "https://d1.islamhouse.com/data/ar/ih_videos/mp4/chain/kids/ar_01_altafseer.mp4"
+    },
+    {
+      "order": 17,
+      "size": "96.89 MB",
+      "extension_type": "MP4",
+      "description": "التفسير - الجزء الثاني",
+      "url": "https://d1.islamhouse.com/data/ar/ih_videos/mp4/chain/kids/ar_02_altafseer.mp4"
+    },
+    {
+      "order": 18,
+      "size": "100.04 MB",
+      "extension_type": "MP4",
+      "description": "التفسير - الجزء الثالث",
+      "url": "https://d1.islamhouse.com/data/ar/ih_videos/mp4/chain/kids/ar_03_altafseer.mp4"
+    },
+    {
+      "order": 19,
+      "size": "107.57 MB",
+      "extension_type": "MP4",
+      "description": "التفسير - الجزء الرابع",
+      "url": "https://d1.islamhouse.com/data/ar/ih_videos/mp4/chain/kids/ar_04_altafseer.mp4"
+    },
+    {
+      "order": 20,
+      "size": "87.73 MB",
+      "extension_type": "MP4",
+      "description": "التفسير - الجزء الخامس",
+      "url": "https://d1.islamhouse.com/data/ar/ih_videos/mp4/chain/kids/ar_05_altafseer.mp4"
+    },
+    {
+      "order": 21,
+      "size": "81.27 MB",
+      "extension_type": "MP4",
+      "description": "التفسير - الجزء السادس",
+      "url": "https://d1.islamhouse.com/data/ar/ih_videos/mp4/chain/kids/ar_06_altafseer.mp4"
+    },
+    {
+      "order": 22,
+      "size": "111.17 MB",
+      "extension_type": "MP4",
+      "description": "الحديث - الجزء الأول",
+      "url": "https://d1.islamhouse.com/data/ar/ih_videos/mp4/chain/kids/ar_01_alhadith.mp4"
+    },
+    {
+      "order": 23,
+      "size": "81.73 MB",
+      "extension_type": "MP4",
+      "description": "الحديث - الجزء الثاني",
+      "url": "https://d1.islamhouse.com/data/ar/ih_videos/mp4/chain/kids/ar_02_alhadith.mp4"
+    },
+    {
+      "order": 24,
+      "size": "76.71 MB",
+      "extension_type": "MP4",
+      "description": "الحديث - الجزء الثالث",
+      "url": "https://d1.islamhouse.com/data/ar/ih_videos/mp4/chain/kids/ar_03_alhadith.mp4"
+    },
+    {
+      "order": 25,
+      "size": "81.9 MB",
+      "extension_type": "MP4",
+      "description": "الآداب الإسلامية - الجزء الأول",
+      "url": "https://d1.islamhouse.com/data/ar/ih_videos/mp4/chain/kids/ar_01_aladab.mp4"
+    },
+    {
+      "order": 26,
+      "size": "99.54 MB",
+      "extension_type": "MP4",
+      "description": "الآداب الإسلامية - الجزء الثاني",
+      "url": "https://d1.islamhouse.com/data/ar/ih_videos/mp4/chain/kids/ar_02_aladab.mp4"
+    },
+    {
+      "order": 27,
+      "size": "80.11 MB",
+      "extension_type": "MP4",
+      "description": "الآداب الإسلامية - الجزء الثالث",
+      "url": "https://d1.islamhouse.com/data/ar/ih_videos/mp4/chain/kids/ar_03_aladab.mp4"
+    },
+    {
+      "order": 28,
+      "size": "78.93 MB",
+      "extension_type": "MP4",
+      "description": "الآداب الإسلامية - الجزء الرابع",
+      "url": "https://d1.islamhouse.com/data/ar/ih_videos/mp4/chain/kids/ar_04_aladab.mp4"
+    },
+    {
+      "order": 29,
+      "size": "73 MB",
+      "extension_type": "MP4",
+      "description": "الأخلاق - الجزء الأول",
+      "url": "https://d1.islamhouse.com/data/ar/ih_videos/mp4/chain/kids/ar_01_alakhlaq.mp4"
+    },
+    {
+      "order": 30,
+      "size": "71.46 MB",
+      "extension_type": "MP4",
+      "description": "الأخلاق - الجزء الثاني",
+      "url": "https://d1.islamhouse.com/data/ar/ih_videos/mp4/chain/kids/ar_02_alakhlaq.mp4"
+    },
+    {
+      "order": 31,
+      "size": "66.88 MB",
+      "extension_type": "MP4",
+      "description": "الأخلاق - الجزء الثالث",
+      "url": "https://d1.islamhouse.com/data/ar/ih_videos/mp4/chain/kids/ar_03_alakhlaq.mp4"
+    },
+    {
+      "order": 32,
+      "size": "76.02 MB",
+      "extension_type": "MP4",
+      "description": "الأخلاق - الجزء الرابع",
+      "url": "https://d1.islamhouse.com/data/ar/ih_videos/mp4/chain/kids/ar_04_alakhlaq.mp4"
+    },
+    {
+      "order": 33,
+      "size": "73.51 MB",
+      "extension_type": "MP4",
+      "description": "الأخلاق - الجزء الخامس",
+      "url": "https://d1.islamhouse.com/data/ar/ih_videos/mp4/chain/kids/ar_05_alakhlaq.mp4"
+    },
+    {
+      "order": 34,
+      "size": "91.15 MB",
+      "extension_type": "MP4",
+      "description": "الأخلاق - الجزء السادس",
+      "url": "https://d1.islamhouse.com/data/ar/ih_videos/mp4/chain/kids/ar_06_alakhlaq.mp4"
+    },
+    {
+      "order": 35,
+      "size": "69.8 MB",
+      "extension_type": "MP4",
+      "description": "الأدعية والأذكار - الجزء الأول",
+      "url": "https://d1.islamhouse.com/data/ar/ih_videos/mp4/chain/kids/ar_01_alakzar.mp4"
+    },
+    {
+      "order": 36,
+      "size": "76.87 MB",
+      "extension_type": "MP4",
+      "description": "الأدعية والأذكار - الجزء الثاني",
+      "url": "https://d1.islamhouse.com/data/ar/ih_videos/mp4/chain/kids/ar_02_alakzar.mp4"
+    },
+    {
+      "order": 37,
+      "size": "75.93 MB",
+      "extension_type": "MP4",
+      "description": "الأدعية والأذكار - الجزء الثالث",
+      "url": "https://d1.islamhouse.com/data/ar/ih_videos/mp4/chain/kids/ar_03_alakzar.mp4"
+    },
+    {
+      "order": 38,
+      "size": "78.88 MB",
+      "extension_type": "MP4",
+      "description": "الأدعية والأذكار - الجزء الرابع",
+      "url": "https://d1.islamhouse.com/data/ar/ih_videos/mp4/chain/kids/ar_04_alakzar.mp4"
+    },
+    {
+      "order": 39,
+      "size": "85.17 MB",
+      "extension_type": "MP4",
+      "description": "منوعات - الجزء الأول",
+      "url": "https://d1.islamhouse.com/data/ar/ih_videos/mp4/chain/kids/ar_01_collection.mp4"
+    },
+    {
+      "order": 40,
+      "size": "97.76 MB",
+      "extension_type": "MP4",
+      "description": "منوعات - الجزء الثاني",
+      "url": "https://d1.islamhouse.com/data/ar/ih_videos/mp4/chain/kids/ar_02_collection.mp4"
+    }
+  ]
+}

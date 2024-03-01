@@ -1,0 +1,1001 @@
+{
+  "data": [
+    {
+      "id": 2838342,
+      "source_id": 2838342,
+      "title": "الأنبياء وتكريم المرأة",
+      "type": "books",
+      "add_date": 1708406314,
+      "update_date": 1708417115,
+      "description": "كتاب قيم يتحدث عن الأنبياء وتكريم المرأة ومكانة المرأة في الإسلام.",
+      "full_description": null,
+      "source_language": "ar",
+      "translated_language": "ar",
+      "image": null,
+      "num_attachments": 1,
+      "importance_level": "normal",
+      "api_url": "https://api3.islamhouse.com/v3/paV29H2gm56kvLPy/main/get-item/2838342/ar/json",
+      "prepared_by": [
+        {
+          "id": 7054,
+          "source_id": 7054,
+          "title": "عبد الملك القاسم",
+          "type": "author",
+          "kind": "author",
+          "description": null,
+          "api_url": "https://api3.islamhouse.com/v3/paV29H2gm56kvLPy/main/get-author/7054/ar/json"
+        }
+      ],
+      "attachments": [
+        {
+          "order": 0,
+          "size": "11.98 MB",
+          "extension_type": "PDF",
+          "description": "الأنبياء وتكريم المرأة",
+          "url": "https://d1.islamhouse.com/data/ar/ih_books/single_010/ar-alanbiaa-wa-takrim-al-maraa-ppo.pdf"
+        }
+      ],
+      "locales": []
+    },
+    {
+      "id": 2838325,
+      "source_id": 2838325,
+      "title": "زاد المؤذن",
+      "type": "books",
+      "add_date": 1708249446,
+      "update_date": 1708260246,
+      "description": "زاد المؤذن : كتاب جمع فيها المؤلف - أثابه الله - ما يقارب من ثلاثمائة مسألة في أحكام الأذان وزادا للمؤذن، مع ذكر بعض الأدلة والأقوال المختصرة في هذه المسألة.",
+      "full_description": null,
+      "source_language": "ar",
+      "translated_language": "ar",
+      "image": null,
+      "num_attachments": 1,
+      "importance_level": "normal",
+      "api_url": "https://api3.islamhouse.com/v3/paV29H2gm56kvLPy/main/get-item/2838325/ar/json",
+      "prepared_by": [
+        {
+          "id": 2827777,
+          "source_id": 2827777,
+          "title": "فهد بن يحيى العماري",
+          "type": "author",
+          "kind": "author",
+          "description": null,
+          "api_url": "https://api3.islamhouse.com/v3/paV29H2gm56kvLPy/main/get-author/2827777/ar/json"
+        }
+      ],
+      "attachments": [
+        {
+          "order": 0,
+          "size": "21.34 MB",
+          "extension_type": "PDF",
+          "description": "زاد المؤذن",
+          "url": "https://d1.islamhouse.com/data/ar/ih_books/single_010/ar-zad-almoazen.pdf"
+        }
+      ],
+      "locales": []
+    },
+    {
+      "id": 2838293,
+      "source_id": 2838293,
+      "title": "دعوة الهندوس إلى الإسلام",
+      "type": "books",
+      "add_date": 1707218702,
+      "update_date": 1707229502,
+      "description": null,
+      "full_description": null,
+      "source_language": "ar",
+      "translated_language": "ar",
+      "image": null,
+      "num_attachments": 1,
+      "importance_level": "normal",
+      "api_url": "https://api3.islamhouse.com/v3/paV29H2gm56kvLPy/main/get-item/2838293/ar/json",
+      "prepared_by": [
+        {
+          "id": 2828493,
+          "source_id": 2828493,
+          "title": "إبراهيم بن عبد الغفور",
+          "type": "author",
+          "kind": "author",
+          "description": null,
+          "api_url": "https://api3.islamhouse.com/v3/paV29H2gm56kvLPy/main/get-author/2828493/ar/json"
+        }
+      ],
+      "attachments": [
+        {
+          "order": 0,
+          "size": "26.45 MB",
+          "extension_type": "PDF",
+          "description": "دعوة الهندوس إلى الإسلام",
+          "url": "https://d1.islamhouse.com/data/ar/ih_books/single9/ar-daw3at-alhindos.pdf"
+        }
+      ],
+      "locales": []
+    },
+    {
+      "id": 2838292,
+      "source_id": 2838292,
+      "title": "الزبد المليح من كتاب الجواب الصحيح لمن بدل دين المسيح",
+      "type": "books",
+      "add_date": 1707217884,
+      "update_date": 1707342252,
+      "description": "كتاب نافع عبارة عن مختصر لطيف في الرد على النصارى، وهو اختصار لكتاب شيخ الإسلام ابن تيمية رحمه الله (الجواب الصحيح لمن بدل دين المسيح).",
+      "full_description": null,
+      "source_language": "ar",
+      "translated_language": "ar",
+      "image": null,
+      "num_attachments": 1,
+      "importance_level": "normal",
+      "api_url": "https://api3.islamhouse.com/v3/paV29H2gm56kvLPy/main/get-item/2838292/ar/json",
+      "prepared_by": [
+        {
+          "id": 2828492,
+          "source_id": 2828492,
+          "title": "عبدالإله بن عبد الله بن على بن جابر",
+          "type": "author",
+          "kind": "author",
+          "description": null,
+          "api_url": "https://api3.islamhouse.com/v3/paV29H2gm56kvLPy/main/get-author/2828492/ar/json"
+        }
+      ],
+      "attachments": [
+        {
+          "order": 0,
+          "size": "1.02 MB",
+          "extension_type": "PDF",
+          "description": "الزبد المليح من كتاب الجواب الصحيح لمن بدل دين المسيح",
+          "url": "https://d1.islamhouse.com/data/ar/ih_books/single_09/ar-alzabd-almaneh.pdf"
+        }
+      ],
+      "locales": []
+    },
+    {
+      "id": 2838208,
+      "source_id": 2838208,
+      "title": "حبنا لعيسى هدانا للإسلام",
+      "type": "books",
+      "add_date": 1706551881,
+      "update_date": 1706562681,
+      "description": "كتاب ماتع يتحدث فيه الكاتب عن انه كيف يقود الحب الحقيقي لرسول الله عيسى عليه الصلاة والسلام إلى الإسلام وإلى التوحيد.",
+      "full_description": null,
+      "source_language": "ar",
+      "translated_language": "ar",
+      "image": null,
+      "num_attachments": 1,
+      "importance_level": "normal",
+      "api_url": "https://api3.islamhouse.com/v3/paV29H2gm56kvLPy/main/get-item/2838208/ar/json",
+      "prepared_by": [
+        {
+          "id": 2827848,
+          "source_id": 2827848,
+          "title": "جوتيار بامرني",
+          "type": "author",
+          "kind": "author",
+          "description": null,
+          "api_url": "https://api3.islamhouse.com/v3/paV29H2gm56kvLPy/main/get-author/2827848/ar/json"
+        }
+      ],
+      "attachments": [
+        {
+          "order": 0,
+          "size": "2.27 MB",
+          "extension_type": "PDF",
+          "description": "حبنا لعيسى هدانا للإسلام",
+          "url": "https://d1.islamhouse.com/data/ar/ih_books/single_010/ar-hubuna-li3isa-hadana-lil-islam-p.pdf"
+        }
+      ],
+      "locales": []
+    },
+    {
+      "id": 2838206,
+      "source_id": 2838206,
+      "title": "سبع رسائل لطيفة لمحبي مريم العذراء وابنها المسيح ابن مريم",
+      "type": "books",
+      "add_date": 1706372993,
+      "update_date": 1706372993,
+      "description": "هذا الكتاب يُسلط الضوء بأسلوب علمي وهادئ على المحاور الخمسة لنقض دين النصارى، وهي (1) بطلان دعوى ربوبية المسيح، و (2) بطلان عقيدة توارث الخطيئة، و (3) بطلان عقيدة صلب المسيح، و (4) بطلان عقيدة أن العهدين القديم والجديد كلام الله، و (5) قصة تحريف دين المسيح على يد بولس وأباطرة الرومان بعده. كما يسلط هذا الكتاب الضوء بأسلوب علمي وهادئ على المحاور الستة لبناء الإسلام في قلب القارىء النصراني، وهي (1) قصة المسيح ابن مريم والصحيحة، و (2) البشارات بنبوة محمد (عليه الصلاة والسلام) في العهدين القديم والجديد، و (3) بيان أن الإسلام أتى بحسنتين عظيمتين إلى دين المسيح الأصلي، لأنه متمم له غير مناقض له، و (4) أجوبة الشبهات الأربعة على دين الإسلام، ثم (5) قصص هادايات أناس مثقفين إلى دين الإسلام، وختاما (6) رسالة صغيرة في بيان (لماذا خلقنا الله؟). وبهذا يكون الطرح الدعوي متوازنا، هدم للعقيدة الباطلة، وبناء للعقيدة الصحيحة.",
+      "full_description": null,
+      "source_language": "ar",
+      "translated_language": "ar",
+      "image": null,
+      "num_attachments": 1,
+      "importance_level": "normal",
+      "api_url": "https://api3.islamhouse.com/v3/paV29H2gm56kvLPy/main/get-item/2838206/ar/json",
+      "prepared_by": [
+        {
+          "id": 8624,
+          "source_id": 8624,
+          "title": "ماجد بن سليمان الرسي",
+          "type": "author",
+          "kind": "author",
+          "description": null,
+          "api_url": "https://api3.islamhouse.com/v3/paV29H2gm56kvLPy/main/get-author/8624/ar/json"
+        }
+      ],
+      "attachments": [
+        {
+          "order": 0,
+          "size": "3.76 MB",
+          "extension_type": "PDF",
+          "description": "سبع رسائل لطيفة لمحبي مريم العذراء وابنها المسيح ابن مريم",
+          "url": "https://d1.islamhouse.com/data/ar/ih_books/single_010/ar-sab3-rasail-latifa-ppppp.pdf"
+        }
+      ],
+      "locales": []
+    },
+    {
+      "id": 2838199,
+      "source_id": 2838199,
+      "title": "تطريز  [ شرح تفسير كلمة التوحيد ] للعلامة صالح الفوزان",
+      "type": "books",
+      "add_date": 1705934572,
+      "update_date": 1705934572,
+      "description": "كتاب نافع يتضمن شرحا لكتاب - شرح تفسير كلمة التوحيد - للعلامة صالح الفوزان ويشرح الكتاب الشيخ صالح بن عبد الله بن حمد العصيمي.",
+      "full_description": null,
+      "source_language": "ar",
+      "translated_language": "ar",
+      "image": null,
+      "num_attachments": 1,
+      "importance_level": "high",
+      "api_url": "https://api3.islamhouse.com/v3/paV29H2gm56kvLPy/main/get-item/2838199/ar/json",
+      "prepared_by": [
+        {
+          "id": 8403,
+          "source_id": 8403,
+          "title": "صالح بن عبد الله بن حمد العصيمي",
+          "type": "author",
+          "kind": "author",
+          "description": "<p>هو الشيخ صالح بن عبد الله بنِ حمد العصيمي - أبو عمر - ولد في الرياض عام 1391هـ، وتخرج في جامعة الإمام محمد بن سعود، وحصل على الماجستير في علوم الحديث من جامعة أم القرى، وقد تتلمذ على يد الكثير من أهل العلم في نجد وخارجها.</p>",
+          "api_url": "https://api3.islamhouse.com/v3/paV29H2gm56kvLPy/main/get-author/8403/ar/json"
+        }
+      ],
+      "attachments": [
+        {
+          "order": 0,
+          "size": "3.47 MB",
+          "extension_type": "PDF",
+          "description": "تطريز  [ شرح تفسير كلمة التوحيد ] للعلامة صالح الفوزان",
+          "url": "https://d1.islamhouse.com/data/ar/ih_books/single_010/ar-tatriz-sharh-tafsir-kalimat-altawhid.pdf"
+        }
+      ],
+      "locales": []
+    },
+    {
+      "id": 2838198,
+      "source_id": 2838198,
+      "title": "حرب على الحقيقة",
+      "type": "books",
+      "add_date": 1705765786,
+      "update_date": 1706647530,
+      "description": "يهدف هذا الكتاب بدايةً لإثبات وجود خالق للكون، وتوضيح مفهوم الإله المعبود من المنظور الإسلامي، كما يهدف الكتاب إلى توضيح أن  الحرية التي وهبها الخالق للبشر أمانة ومسؤولية، ووعي بالحق والالتزام به والإخلاص في طلبه.\r\nوأن القيمة العليا التي يجب أن يختارها البشر هي حق الخالق، والتي يجب أن تكون على رأس قائمة أولويات الجميع. و القيمة هي المحرك والمحفز عند الإنسان، فلا يعيش إنسان بلا قيمة. وكل منا يرى الدنيا من وجهة نظره لذلك، فبإمكان الجميع التغيير من حياتهم إلى الأفضل. والقيم هي تفضيلات شخصية، وهي بشكل عام صفات حميدة، ولكن الاختلاف بين الأشخاص في ترتيب الأولويات في اختيار القيمة الأهم من هذه القيم.  وبناءً على اختيار اﻹنسان يتحدد مقامه عند خالقه. وقيمة الخلود بعد الموت والعمل لأجلها يجب أن تكون هدف كل إنسان. والمبدأ الذي يجب أن يتخذه البشر هو أن المساس بحق الخالق هو خط أحمر بالنسبة له.",
+      "full_description": null,
+      "source_language": "ar",
+      "translated_language": "ar",
+      "image": null,
+      "num_attachments": 1,
+      "importance_level": "normal",
+      "api_url": "https://api3.islamhouse.com/v3/paV29H2gm56kvLPy/main/get-item/2838198/ar/json",
+      "prepared_by": [
+        {
+          "id": 2827822,
+          "source_id": 2827822,
+          "title": "فاتن صبري",
+          "type": "author",
+          "kind": "author",
+          "description": null,
+          "api_url": "https://api3.islamhouse.com/v3/paV29H2gm56kvLPy/main/get-author/2827822/ar/json"
+        }
+      ],
+      "attachments": [
+        {
+          "order": 0,
+          "size": "1.54 MB",
+          "extension_type": "PDF",
+          "description": "حرب على الحقيقة",
+          "url": "https://d1.islamhouse.com/data/ar/ih_books/single_010/ar-harb-3la-alhakekah2.pdf"
+        }
+      ],
+      "locales": []
+    },
+    {
+      "id": 2838152,
+      "source_id": 2838152,
+      "title": "أوراق متساقطة",
+      "type": "books",
+      "add_date": 1704384475,
+      "update_date": 1704384475,
+      "description": "كتاب يتطرق إلى أهم مظاهر الضعف والأوراق المتساقطة من شجرة قيم مجتمعاتنا الإسلامية والعربية خاصة، لعله أن يُسهم بعد توفيق الله في تسليط الضوء على بعض هذه السلوكيات والأخطاء، لنُمكن أفراد المجتمع من تجنبها أو تحجيمها على أقل تقدير.",
+      "full_description": null,
+      "source_language": "ar",
+      "translated_language": "ar",
+      "image": null,
+      "num_attachments": 1,
+      "importance_level": "normal",
+      "api_url": "https://api3.islamhouse.com/v3/paV29H2gm56kvLPy/main/get-item/2838152/ar/json",
+      "prepared_by": [
+        {
+          "id": 209454,
+          "source_id": 209454,
+          "title": "حكم بن عادل زمو العقيلي",
+          "type": "author",
+          "kind": "author",
+          "description": "- هو المهندس / الشريف حكم بن عادل بن حسن بن علي بن خلف بن حسن بن علي المعصراني الملقب زمو النويري العقيلي الهاشمي.\r\n- مدير المبيعات والتسويق - إدارة الشبكات والإتصالات - أي . بي . بي لأنظمة التحكم الآلي المحدودة الرياض.",
+          "api_url": "https://api3.islamhouse.com/v3/paV29H2gm56kvLPy/main/get-author/209454/ar/json"
+        }
+      ],
+      "attachments": [
+        {
+          "order": 0,
+          "size": "2.29 MB",
+          "extension_type": "PDF",
+          "description": "أوراق متساقطة",
+          "url": "https://d1.islamhouse.com/data/ar/ih_books/single_010/ar-awraq-mutasaqitah-p.pdf"
+        }
+      ],
+      "locales": []
+    },
+    {
+      "id": 2838143,
+      "source_id": 2838143,
+      "title": "لماذا الإيمان بنبي الإسلام محمد صلى الله عليه وسلم؟",
+      "type": "books",
+      "add_date": 1704377068,
+      "update_date": 1704856004,
+      "description": "مقال نافع يتناول المعيار الذي على أساسه يكون الإيمان بنبي الإسلام محمد صلى الله عليه وسلم أو أي من أنبياء الله تعالى.",
+      "full_description": null,
+      "source_language": "ar",
+      "translated_language": "ar",
+      "image": null,
+      "num_attachments": 1,
+      "importance_level": "normal",
+      "api_url": "https://api3.islamhouse.com/v3/paV29H2gm56kvLPy/main/get-item/2838143/ar/json",
+      "prepared_by": [
+        {
+          "id": 386810,
+          "source_id": 386810,
+          "title": "محمد السيد محمد",
+          "type": "author",
+          "kind": "author",
+          "description": null,
+          "api_url": "https://api3.islamhouse.com/v3/paV29H2gm56kvLPy/main/get-author/386810/ar/json"
+        }
+      ],
+      "attachments": [
+        {
+          "order": 0,
+          "size": "722.81 KB",
+          "extension_type": "PDF",
+          "description": "لماذا الإيمان بنبي الإسلام محمد صلى الله عليه وسلم؟",
+          "url": "https://d1.islamhouse.com/data/ar/ih_books/single_010/ar-limaza-aliman-bi-an-nabi-ppppppp-book.pdf"
+        }
+      ],
+      "locales": []
+    },
+    {
+      "id": 2838140,
+      "source_id": 2838140,
+      "title": "مراقي الوعي  - فصول تأصيلية وتنبيهات على مزالق فكرية -",
+      "type": "books",
+      "add_date": 1704367009,
+      "update_date": 1704367009,
+      "description": "كتاب يحتوي على فصول من مباحث عقدية ومسارب فكرية تشتد الحاجة إلى تأصيلها، وبيان لوجه الصواب في «قضايا ساخنة» كثر الأخذ فيها والرد، مع تنبيهات على مزالق فكرية، ومذاهب ردية، ومغالطات عقلية.",
+      "full_description": null,
+      "source_language": "ar",
+      "translated_language": "ar",
+      "image": null,
+      "num_attachments": 1,
+      "importance_level": "normal",
+      "api_url": "https://api3.islamhouse.com/v3/paV29H2gm56kvLPy/main/get-item/2838140/ar/json",
+      "prepared_by": [
+        {
+          "id": 184698,
+          "source_id": 184698,
+          "title": "صالح بن عبد العزيز بن عثمان سندي",
+          "type": "author",
+          "kind": "author",
+          "description": "أستاذ مشارك بقسم العقيدة بالجامعة الإسلامية بالمدينة، من مؤلفاته :1- المسائل العقدية المتعلقة بالحسنات والسيئات – جمعًا ودراسة. 2- مراعاة الخلاف في الفقه - تأصيلاً وتطبيقا.\r\n• البريد الإلكتروني: dr.saleh.s@gmail.com‬\r\n• الموقع الرسمي للشيخ : http://www.salehs.net",
+          "api_url": "https://api3.islamhouse.com/v3/paV29H2gm56kvLPy/main/get-author/184698/ar/json"
+        }
+      ],
+      "attachments": [
+        {
+          "order": 0,
+          "size": "31.3 MB",
+          "extension_type": "PDF",
+          "description": "مراقي الوعي فصول تأصيلية وتنبيهات على مزالق فكرية",
+          "url": "https://d1.islamhouse.com/data/ar/ih_books/single_010/ar-maraqi-alwa3i.pdf"
+        }
+      ],
+      "locales": []
+    },
+    {
+      "id": 2838123,
+      "source_id": 2838123,
+      "title": "أحاديث الإيمان",
+      "type": "books",
+      "add_date": 1703789969,
+      "update_date": 1703789969,
+      "description": "كتاب قيم يتضمن بيان الشيخ عبد الرزاق البدر - أثابه الله - لجملة عظيمة من الأحاديث الواردة في باب الإيمان، مع شرحها والتعليق عليها، وذكر بعض الفوائد المستنبطة منها.",
+      "full_description": null,
+      "source_language": "ar",
+      "translated_language": "ar",
+      "image": null,
+      "num_attachments": 1,
+      "importance_level": "high",
+      "api_url": "https://api3.islamhouse.com/v3/paV29H2gm56kvLPy/main/get-item/2838123/ar/json",
+      "prepared_by": [
+        {
+          "id": 7737,
+          "source_id": 7737,
+          "title": "عبد الرزاق بن عبد المحسن البدر",
+          "type": "author",
+          "kind": "author",
+          "description": "-",
+          "api_url": "https://api3.islamhouse.com/v3/paV29H2gm56kvLPy/main/get-author/7737/ar/json"
+        }
+      ],
+      "attachments": [
+        {
+          "order": 0,
+          "size": "10.87 MB",
+          "extension_type": "PDF",
+          "description": "أحاديث الإيمان",
+          "url": "https://d1.islamhouse.com/data/ar/ih_books/single_010/ar-ahadith-aliman-pp.pdf"
+        }
+      ],
+      "locales": []
+    },
+    {
+      "id": 2838121,
+      "source_id": 2838121,
+      "title": "سنن قل العمل بها (مشاري العتمان)",
+      "type": "books",
+      "add_date": 1703787882,
+      "update_date": 1704020281,
+      "description": "كتاب نافع يتضمن ١٥٢ سنة قل العمل بها موثقة بالدليل.",
+      "full_description": null,
+      "source_language": "ar",
+      "translated_language": "ar",
+      "image": null,
+      "num_attachments": 1,
+      "importance_level": "normal",
+      "api_url": "https://api3.islamhouse.com/v3/paV29H2gm56kvLPy/main/get-item/2838121/ar/json",
+      "prepared_by": [
+        {
+          "id": 2828484,
+          "source_id": 2828484,
+          "title": "مشاري بن عبدالرحمن بن سعد العثمان",
+          "type": "author",
+          "kind": "author",
+          "description": null,
+          "api_url": "https://api3.islamhouse.com/v3/paV29H2gm56kvLPy/main/get-author/2828484/ar/json"
+        }
+      ],
+      "attachments": [
+        {
+          "order": 0,
+          "size": "2.1 MB",
+          "extension_type": "PDF",
+          "description": "سنن قل العمل بها",
+          "url": "https://d1.islamhouse.com/data/ar/ih_books/single_010/ar-sunan-qal-al3amal-biha-ppp.pdf"
+        }
+      ],
+      "locales": []
+    },
+    {
+      "id": 2838108,
+      "source_id": 2838108,
+      "title": "إنه رسول الله صلى الله عليه وسلم",
+      "type": "books",
+      "add_date": 1703355472,
+      "update_date": 1703355472,
+      "description": "رسالة نافعة جمع فيها المؤلف - أثابه الله - المسائل المتعلقة بأحكام سب رسول الله - صلى الله عليه وسلم، وأحكام إهانة القرآن الكريم.",
+      "full_description": null,
+      "source_language": "ar",
+      "translated_language": "ar",
+      "image": null,
+      "num_attachments": 1,
+      "importance_level": "normal",
+      "api_url": "https://api3.islamhouse.com/v3/paV29H2gm56kvLPy/main/get-item/2838108/ar/json",
+      "prepared_by": [
+        {
+          "id": 2827777,
+          "source_id": 2827777,
+          "title": "فهد بن يحيى العماري",
+          "type": "author",
+          "kind": "author",
+          "description": null,
+          "api_url": "https://api3.islamhouse.com/v3/paV29H2gm56kvLPy/main/get-author/2827777/ar/json"
+        }
+      ],
+      "attachments": [
+        {
+          "order": 0,
+          "size": "1.05 MB",
+          "extension_type": "PDF",
+          "description": "إنه رسول الله صلى الله عليه وسلم",
+          "url": "https://d1.islamhouse.com/data/ar/ih_books/single_010/ar-inhou-rasoul-allah.pdf"
+        }
+      ],
+      "locales": []
+    },
+    {
+      "id": 2838068,
+      "source_id": 2838068,
+      "title": "شرح منظومة الكبائر للإمام الحجاوي",
+      "type": "books",
+      "add_date": 1702565059,
+      "update_date": 1702565059,
+      "description": "كتاب قيم يحتوي على شرح لمنظومة الكبائر للعلامة موسى الحجاوي - رحمه الله -.",
+      "full_description": null,
+      "source_language": "ar",
+      "translated_language": "ar",
+      "image": null,
+      "num_attachments": 1,
+      "importance_level": "normal",
+      "api_url": "https://api3.islamhouse.com/v3/paV29H2gm56kvLPy/main/get-item/2838068/ar/json",
+      "prepared_by": [
+        {
+          "id": 8403,
+          "source_id": 8403,
+          "title": "صالح بن عبد الله بن حمد العصيمي",
+          "type": "author",
+          "kind": "author",
+          "description": "<p>هو الشيخ صالح بن عبد الله بنِ حمد العصيمي - أبو عمر - ولد في الرياض عام 1391هـ، وتخرج في جامعة الإمام محمد بن سعود، وحصل على الماجستير في علوم الحديث من جامعة أم القرى، وقد تتلمذ على يد الكثير من أهل العلم في نجد وخارجها.</p>",
+          "api_url": "https://api3.islamhouse.com/v3/paV29H2gm56kvLPy/main/get-author/8403/ar/json"
+        }
+      ],
+      "attachments": [
+        {
+          "order": 0,
+          "size": "2.87 MB",
+          "extension_type": "PDF",
+          "description": "شرح منظومة الكبائر للإمام الحجاوي",
+          "url": "https://d1.islamhouse.com/data/ar/ih_books/single_010/ar-sharh-manzumat-alkabayir-lil-iimam-alhajaawii-pppp.pdf"
+        }
+      ],
+      "locales": []
+    },
+    {
+      "id": 2838067,
+      "source_id": 2838067,
+      "title": "تلخيص فتاوى اللجنة الدائمة",
+      "type": "books",
+      "add_date": 1702564212,
+      "update_date": 1702564212,
+      "description": "كتاب قيم ضمن فيه المؤلف تلخيصا لفتاوي اللجنة الدائمة للإفتاء في السعودية.",
+      "full_description": null,
+      "source_language": "ar",
+      "translated_language": "ar",
+      "image": null,
+      "num_attachments": 1,
+      "importance_level": "normal",
+      "api_url": "https://api3.islamhouse.com/v3/paV29H2gm56kvLPy/main/get-item/2838067/ar/json",
+      "prepared_by": [
+        {
+          "id": 291718,
+          "source_id": 291718,
+          "title": "وليد بن راشد السعيدان",
+          "type": "author",
+          "kind": "author",
+          "description": "داعية سعودي من مدينة الدلم بمحافظة الخرج،بمنطقة الرياض امام جامع الشيخ راشد بن خنين بالدلم صاحب كتاب الإفادة الشرعية في بعض المسائل الطبية وعدة كتب فقهية أخرى. يمتاز الشيخ وليد السعيدان ويتميز في علم الفقه والحديث والتفسير والعقيدة وله مؤلفات في تلك الفنون وخاصة الفقه وله درس أسبوعي (الثلاثاء) من كل أسبوع في جامع الشيخ عبد العزيز بن باز بحي آل سعيدان بالدلم وهو شاعر ولكن لم يتفرغ للشعر ومتقن في قواعد الأصول ومحب لها ويحب تعليمها للناس ومعلم مرب للطالب يعتني بطلابه وإفهامهم المسائل خلال درسه وهبه الله حافظة جيدة برز بها عن أقرانه ألقى نونيته (نونية السعداني)-تجدها بصوته في موقع صيد الفوائد- على الشيخ عبد العزيز بن باز وبحضور الشيخ عبد الرحمن الجلال أمد الله في عمره يحب التأليف ويقتطع وقتا كثيرا من أجله بل ويتفرغ له أحيانا. وهو مع ذلك لم يبلغ الأربعين بعد. وحقه علينا الدعاء له بالإخلاص والنفع والانتفاع بعلمه آمين.",
+          "api_url": "https://api3.islamhouse.com/v3/paV29H2gm56kvLPy/main/get-author/291718/ar/json"
+        }
+      ],
+      "attachments": [
+        {
+          "order": 0,
+          "size": "8.34 MB",
+          "extension_type": "PDF",
+          "description": "تلخيص فتاوى اللجنة الدائمة",
+          "url": "https://d1.islamhouse.com/data/ar/ih_books/single_010/ar-talkhis-fatawaa-allajnat-aldaym-ppp.pdf"
+        }
+      ],
+      "locales": []
+    },
+    {
+      "id": 2838032,
+      "source_id": 2838032,
+      "title": "شرح [الأذكار التي تقال بعد الفراغ من الصلاة] للعلامة ابن باز",
+      "type": "books",
+      "add_date": 1702020023,
+      "update_date": 1702020023,
+      "description": "كتاب نافع يتضمن شرحا لكتاب العلامة بن باز -رحمه الله- (الأذكار التي تقال بعد الفراغ من الصلاة).",
+      "full_description": null,
+      "source_language": "ar",
+      "translated_language": "ar",
+      "image": null,
+      "num_attachments": 1,
+      "importance_level": "normal",
+      "api_url": "https://api3.islamhouse.com/v3/paV29H2gm56kvLPy/main/get-item/2838032/ar/json",
+      "prepared_by": [
+        {
+          "id": 8403,
+          "source_id": 8403,
+          "title": "صالح بن عبد الله بن حمد العصيمي",
+          "type": "author",
+          "kind": "author",
+          "description": "<p>هو الشيخ صالح بن عبد الله بنِ حمد العصيمي - أبو عمر - ولد في الرياض عام 1391هـ، وتخرج في جامعة الإمام محمد بن سعود، وحصل على الماجستير في علوم الحديث من جامعة أم القرى، وقد تتلمذ على يد الكثير من أهل العلم في نجد وخارجها.</p>",
+          "api_url": "https://api3.islamhouse.com/v3/paV29H2gm56kvLPy/main/get-author/8403/ar/json"
+        }
+      ],
+      "attachments": [
+        {
+          "order": 0,
+          "size": "1.95 MB",
+          "extension_type": "PDF",
+          "description": "شرح [الأذكار التي تقال بعد الفراغ من الصلاة] للعلامة ابن باز",
+          "url": "https://d1.islamhouse.com/data/ar/ih_books/single_010/ar-sharha-al-adhkari-aliti-tuqal-baeid-alfaragh-min-alsala-pp.pdf"
+        }
+      ],
+      "locales": []
+    },
+    {
+      "id": 2838031,
+      "source_id": 2838031,
+      "title": "منهج تعليم الدعاة العاملين في حقل دعوة النصارى",
+      "type": "books",
+      "add_date": 1702018729,
+      "update_date": 1702018729,
+      "description": "كتاب مميز يحتوي على منهج لتأهيل الدعاة الراغبين في العمل في حقل دعوة النصارى تأهيلا علميا شاملا لمعرفة كيفية نقض أصول النصرانية، بأسلوب موجز.",
+      "full_description": null,
+      "source_language": "ar",
+      "translated_language": "ar",
+      "image": null,
+      "num_attachments": 2,
+      "importance_level": "normal",
+      "api_url": "https://api3.islamhouse.com/v3/paV29H2gm56kvLPy/main/get-item/2838031/ar/json",
+      "prepared_by": [
+        {
+          "id": 8624,
+          "source_id": 8624,
+          "title": "ماجد بن سليمان الرسي",
+          "type": "author",
+          "kind": "author",
+          "description": null,
+          "api_url": "https://api3.islamhouse.com/v3/paV29H2gm56kvLPy/main/get-author/8624/ar/json"
+        }
+      ],
+      "attachments": [
+        {
+          "order": 0,
+          "size": "5.68 MB",
+          "extension_type": "PDF",
+          "description": "منهج تعليم الدعاة العاملين في حقل دعوة النصارى",
+          "url": "https://d1.islamhouse.com/data/ar/ih_books/single_010/ar-manhaj-taelim-aldueaat-aleamilin-fi-haql-daewat-alnasaraa-pp.pdf"
+        },
+        {
+          "order": 1,
+          "size": "2.41 MB",
+          "extension_type": "DOC",
+          "description": "منهج تعليم الدعاة العاملين في حقل دعوة النصارى",
+          "url": "https://d1.islamhouse.com/data/ar/ih_books/single_010/ar-manhaj-taelim-aldueaat-aleamilin-fi-haql-daewat-alnasaraa-dd.doc"
+        }
+      ],
+      "locales": []
+    },
+    {
+      "id": 2838025,
+      "source_id": 2838025,
+      "title": "مختصر فرض طلب العلم",
+      "type": "books",
+      "add_date": 1701948264,
+      "update_date": 1701948264,
+      "description": "كتاب قيم عبارة عن مختصر لكتاب -فرض طلب العلم- للإمام أبي بكر محمد بن الحسين الآجري.",
+      "full_description": null,
+      "source_language": "ar",
+      "translated_language": "ar",
+      "image": null,
+      "num_attachments": 1,
+      "importance_level": "high",
+      "api_url": "https://api3.islamhouse.com/v3/paV29H2gm56kvLPy/main/get-item/2838025/ar/json",
+      "prepared_by": [
+        {
+          "id": 2828476,
+          "source_id": 2828476,
+          "title": "عمر بن مصلح الحسيني",
+          "type": "author",
+          "kind": "author",
+          "description": null,
+          "api_url": "https://api3.islamhouse.com/v3/paV29H2gm56kvLPy/main/get-author/2828476/ar/json"
+        }
+      ],
+      "attachments": [
+        {
+          "order": 0,
+          "size": "5.18 MB",
+          "extension_type": "PDF",
+          "description": "مختصر فرض طلب العلم",
+          "url": "https://d1.islamhouse.com/data/ar/ih_books/single_010/ar-mukhtasar-fard-talab-al-3ilm-ppp.pdf"
+        }
+      ],
+      "locales": []
+    },
+    {
+      "id": 2838024,
+      "source_id": 2838024,
+      "title": "مائة كلمة في تربية الأبناء والبنات",
+      "type": "books",
+      "add_date": 1701947634,
+      "update_date": 1701947634,
+      "description": "كتاب مميز يحتوي على مائة فائدة في تربية الأبناء والبنات على الإسلام والخلق القويم.",
+      "full_description": null,
+      "source_language": "ar",
+      "translated_language": "ar",
+      "image": null,
+      "num_attachments": 1,
+      "importance_level": "normal",
+      "api_url": "https://api3.islamhouse.com/v3/paV29H2gm56kvLPy/main/get-item/2838024/ar/json",
+      "prepared_by": [
+        {
+          "id": 287876,
+          "source_id": 287876,
+          "title": "سلطان بن عبد الله العمري",
+          "type": "author",
+          "kind": "author",
+          "description": "سلطان بن عبد الله العمري: هو المشرف العام على موقع: يا له من دين.",
+          "api_url": "https://api3.islamhouse.com/v3/paV29H2gm56kvLPy/main/get-author/287876/ar/json"
+        }
+      ],
+      "attachments": [
+        {
+          "order": 0,
+          "size": "5.65 MB",
+          "extension_type": "PDF",
+          "description": "مائة كلمة في تربية الأبناء والبنات",
+          "url": "https://d1.islamhouse.com/data/ar/ih_books/single_010/ar-miaat-kalima-fi-tarbiat-alabna-walbanat-pp.pdf"
+        }
+      ],
+      "locales": []
+    },
+    {
+      "id": 2837978,
+      "source_id": 2837978,
+      "title": "الأسئلة المختارة من قاموس الأسئلة الشائعة حول الإسلام",
+      "type": "books",
+      "add_date": 1700636755,
+      "update_date": 1700636755,
+      "description": "كتابٌ نافع عبارة عن قاموس يحتوي على مجموعة من الأسئلة الشائعة حول الإسلام، والجواب عليها جوابًا علميًّا في ضوء الكتاب والسنة لبيان حقيقة هذا الدين، وإجلاء المفاهيم الخاطئة.",
+      "full_description": null,
+      "source_language": "ar",
+      "translated_language": "ar",
+      "image": null,
+      "num_attachments": 8,
+      "importance_level": "high",
+      "api_url": "https://api3.islamhouse.com/v3/paV29H2gm56kvLPy/main/get-item/2837978/ar/json",
+      "prepared_by": [
+        {
+          "id": 2826780,
+          "source_id": 2826780,
+          "title": "مركز رواد الترجمة",
+          "type": "author",
+          "kind": "author",
+          "description": "<p>مركز متخصص في الارتقاء بصناعة ترجمة المحتوى الإسلامي والقائمين عليه، يعمل من خلال منظومة إلكترونية لإدارة أنشطة الترجمة ومساندة المترجمين، من أجل إثراء الساحة بمحتوى دعوي ذي جودة عالية؛ ليتحقق إيصال رسالة الإسلام لجميع البشر بلغاتهم.</p>",
+          "api_url": "https://api3.islamhouse.com/v3/paV29H2gm56kvLPy/main/get-author/2826780/ar/json"
+        }
+      ],
+      "attachments": [
+        {
+          "order": 0,
+          "size": "3.04 MB",
+          "extension_type": "PDF",
+          "description": "قسم الإيمان",
+          "url": "https://d1.islamhouse.com/data/ar/ih_books/chain-02/common_questions/ar_qesm_aleman.pdf"
+        },
+        {
+          "order": 1,
+          "size": "7.03 MB",
+          "extension_type": "DOCX",
+          "description": "قسم الإيمان",
+          "url": "https://d1.islamhouse.com/data//ar/ih_books/chain-02/common_questions/ar_qesm_aleman.docx"
+        },
+        {
+          "order": 2,
+          "size": "1.25 MB",
+          "extension_type": "PDF",
+          "description": "قسم الإسلام",
+          "url": "https://d1.islamhouse.com/data/ar/ih_books/chain-02/common_questions/ar_qesm_alislam.pdf"
+        },
+        {
+          "order": 3,
+          "size": "2.64 MB",
+          "extension_type": "DOCX",
+          "description": "قسم الإسلام",
+          "url": "https://d1.islamhouse.com/data//ar/ih_books/chain-02/common_questions/ar_qesm_alislam.docx"
+        },
+        {
+          "order": 4,
+          "size": "680.51 KB",
+          "extension_type": "DOCX",
+          "description": "قسم الخلق",
+          "url": "https://d1.islamhouse.com/data//ar/ih_books/chain-02/common_questions/ar_qesm_alkhlq.docx"
+        },
+        {
+          "order": 5,
+          "size": "273.61 KB",
+          "extension_type": "PDF",
+          "description": "قسم الخلق",
+          "url": "https://d1.islamhouse.com/data/ar/ih_books/chain-02/common_questions/ar_qesm_alkhlq.pdf"
+        },
+        {
+          "order": 6,
+          "size": "146.24 KB",
+          "extension_type": "DOCX",
+          "description": "قسم أركان الإسلام",
+          "url": "https://d1.islamhouse.com/data//ar/ih_books/chain-02/common_questions/ar_qesm_arkan_alislam.docx"
+        },
+        {
+          "order": 7,
+          "size": "255.25 KB",
+          "extension_type": "PDF",
+          "description": "قسم أركان الإسلام",
+          "url": "https://d1.islamhouse.com/data/ar/ih_books/chain-02/common_questions/ar_qesm_arkan_alislam.pdf"
+        }
+      ],
+      "locales": []
+    },
+    {
+      "id": 2837964,
+      "source_id": 2837964,
+      "title": "فتاوى الشيخ عبدالله بن عقيل",
+      "type": "books",
+      "add_date": 1700424364,
+      "update_date": 1700424364,
+      "description": "كتاب نافع من مجلدين يضم مجموع فتاوى فضيلة الشيخ \"عبدالله بن عبدالعزيز بن عقيل\"، والتي كان يجيب فيها على أسئلة السائلين التي ترد عليه في مجلة \"الدعوة الإسلامية\" بالرياض بالمملكة العربية السعودية.",
+      "full_description": null,
+      "source_language": "ar",
+      "translated_language": "ar",
+      "image": null,
+      "num_attachments": 2,
+      "importance_level": "normal",
+      "api_url": "https://api3.islamhouse.com/v3/paV29H2gm56kvLPy/main/get-item/2837964/ar/json",
+      "prepared_by": [
+        {
+          "id": 8113,
+          "source_id": 8113,
+          "title": "عبد الله بن عبد العزيز العقيل",
+          "type": "author",
+          "kind": "author",
+          "description": "هو: الشيخ عبدالله بن عبدالعزيز بن عقيل بن عبدالله بن عبدالكريم آل عقيل.\r\nولــد الشيـــخ عبــدالله في مــدينة عــنيزة عــام 1335 هـ.\r\nنشأ في كنف والده الشيخ عبدالعزيز العقيل، الذي يعتبر من رجالات عنيزة المشهورين، ومن أدبائها وشعرائها، فكان والده هو معلمه الأول.\r\nوقد هيأ الله -عز وجل- للشيخ عبدالله بن عقيل بيت علم، فإلى جانب والده الشيخ عبدالعزيز، فإن أخاه الأكبر هو الشيخ عقيل بن عبدالعزيز وهو من حملة العلم، وكان قاضيًا لمدينة العارضة في منطقة جيران جنوبي المملكة، كما أن عمه هو الشيخ عبدالرحمن بن عقيل الذي عين قاضيًا لمدينة جازان.\r\n التحق بحلقات شيخ عنيزة وعلّامة القصيم الشيخ عبدالرحمن بن ناصر السعدي -رحمه الله- وقد لازمه ملازمة تامة؛ فتعلم عليه القرآن الكريم، والتفسير، والتوحيد، والحديث، والفقه، واللغة ... وغيرها ، ومن شيوخه سماحة الشيخ محمد بن إبراهيم والشيخ محمد الأمين الشنقيطي والشيخ عبدالرزاق عفيفي وغيرهم.\r\nويعتبر الشيخ عبدالله العقيل من أكبر علماء المملكة العربية السعودية، وهو من أكبر طلاب الشيخ عبدالرحمن بن سعدي رحمه الله وله مراسلات خاصة مع الشيخ ، وكان مساعدا لسماحة مفتي الديار الشيخ محمد بن إبراهيم آل الشيخ رحمه الله لعدة سنوات .\r\nوممن تتلمذ عليه من العلماء سماحة الشيخ محمد بن عثيمين رحمه الله .\r\nوقد تولى الشيخ ابن عقيل قضاء عنيزة في حياة شيخه ابن سعدي ، ثم تدرج في القضاء حتى رشحه الشيخ محمد بن إبراهيم رئيسا للجنة الدائمة بمجلس القضاء الأعلى ، وكان ينوب عن الشيخ عبدالله بن حميد في رئاسة مجلس القضاء الأعلى .\r\nويتميز الشيخ ابن عقيل بشدة التواضع وهضمه لنفسه مع ما وصل له من المكانة العلمية والوظائف الكبيرة . \r\nتوفي رحمه الله تعالى يوم الثلاثاء 8 شوال 1432هـ الموافق 6 سبتمبر 2011م عن عمر يناهز 97 عاما.\r\n\r\n",
+          "api_url": "https://api3.islamhouse.com/v3/paV29H2gm56kvLPy/main/get-author/8113/ar/json"
+        }
+      ],
+      "attachments": [
+        {
+          "order": 0,
+          "size": "15.15 MB",
+          "extension_type": "PDF",
+          "description": "فتاوى الشيخ بن عقيل - المجلد الاول",
+          "url": "https://d1.islamhouse.com/data/ar/ih_books/single_010/ar-fatawa-alshiekh-ibn-3uqil-ppp-1.pdf"
+        },
+        {
+          "order": 1,
+          "size": "13.45 MB",
+          "extension_type": "PDF",
+          "description": "فتاوى الشيخ بن عقيل - المجلد الثاني",
+          "url": "https://d1.islamhouse.com/data/ar/ih_books/single_010/ar-fatawa-alshiekh-ibn-3uqil-ppp-222.pdf"
+        }
+      ],
+      "locales": []
+    },
+    {
+      "id": 2837899,
+      "source_id": 2837899,
+      "title": "شرح قصيدة في السير إلى الله والدار الآخرة",
+      "type": "books",
+      "add_date": 1699545260,
+      "update_date": 1699545260,
+      "description": "كتاب ماتع يحتوي على شرح ( قصيدة في السير إلى الله والدار الآخرة ) للشيخ عبد الرحمن بن ناصر السعدي - رحمه الله - والشارح هو الشيخ صالح العصيمي - أثابه الله -.",
+      "full_description": null,
+      "source_language": "ar",
+      "translated_language": "ar",
+      "image": null,
+      "num_attachments": 1,
+      "importance_level": "normal",
+      "api_url": "https://api3.islamhouse.com/v3/paV29H2gm56kvLPy/main/get-item/2837899/ar/json",
+      "prepared_by": [
+        {
+          "id": 8403,
+          "source_id": 8403,
+          "title": "صالح بن عبد الله بن حمد العصيمي",
+          "type": "author",
+          "kind": "author",
+          "description": "<p>هو الشيخ صالح بن عبد الله بنِ حمد العصيمي - أبو عمر - ولد في الرياض عام 1391هـ، وتخرج في جامعة الإمام محمد بن سعود، وحصل على الماجستير في علوم الحديث من جامعة أم القرى، وقد تتلمذ على يد الكثير من أهل العلم في نجد وخارجها.</p>",
+          "api_url": "https://api3.islamhouse.com/v3/paV29H2gm56kvLPy/main/get-author/8403/ar/json"
+        }
+      ],
+      "attachments": [
+        {
+          "order": 0,
+          "size": "1.59 MB",
+          "extension_type": "PDF",
+          "description": "شرح قصيدة في السير إلى الله والدار الآخرة",
+          "url": "https://d1.islamhouse.com/data/ar/ih_books/single_010/ar-sharh-qasidah-fy-assaier-ela-allah-waddar-alakhirah-pp.pdf"
+        }
+      ],
+      "locales": []
+    },
+    {
+      "id": 2837898,
+      "source_id": 2837898,
+      "title": "حديث القرآن عن القرآن",
+      "type": "books",
+      "add_date": 1699544485,
+      "update_date": 1699544486,
+      "description": "كتاب قيم يتحدث عن ذكر القرآن في آيات القرآن الكريم نفسه والكتاب دعوة للتدبر والعمل بآيات الله وأخذ الموعظة والحكمة من كتاب الله.",
+      "full_description": null,
+      "source_language": "ar",
+      "translated_language": "ar",
+      "image": null,
+      "num_attachments": 1,
+      "importance_level": "high",
+      "api_url": "https://api3.islamhouse.com/v3/paV29H2gm56kvLPy/main/get-item/2837898/ar/json",
+      "prepared_by": [
+        {
+          "id": 2828470,
+          "source_id": 2828470,
+          "title": "محمد الراوي",
+          "type": "author",
+          "kind": "author",
+          "description": null,
+          "api_url": "https://api3.islamhouse.com/v3/paV29H2gm56kvLPy/main/get-author/2828470/ar/json"
+        }
+      ],
+      "attachments": [
+        {
+          "order": 0,
+          "size": "11.65 MB",
+          "extension_type": "PDF",
+          "description": "حديث القرآن عن القرآن",
+          "url": "https://d1.islamhouse.com/data/ar/ih_books/single_010/ar-hadith-al-quran-3an-alquran-pd.pdf"
+        }
+      ],
+      "locales": []
+    },
+    {
+      "id": 2837890,
+      "source_id": 2837890,
+      "title": "جامع الباقيات الصالحات [ الجزء الأول ]",
+      "type": "books",
+      "add_date": 1699474247,
+      "update_date": 1699474248,
+      "description": "كتاب نافع جامع لفضائل الأعمال من القرآن الكريم وصحيح السنة النبوية.\r\nيقول المؤلف في وصف هذا الكتاب :\r\nكتاب جامع لفضائل الأعمال من القرآن الكريم وصحيح السنة النبوية ، حتى يجد كل مسلم في طاعته لربه ، لكي يفوز في الدنيا والآخرة ، بثمرات الإيمان والعمل الصالح ، سائلًا الله عز وجل أن بوفقني لإتمامه على الوجه الذي يرضى ربنا ،وأن بجعل له القبول ، وأن يجازي الله خيرًا ، كل من أعان على نشره ، أو نصحني بخصوصه ، وأن بتفعني به وكل من قرأه في الدنيا والآخرة ، إنه ولي ذلك والقادر عليه.",
+      "full_description": null,
+      "source_language": "ar",
+      "translated_language": "ar",
+      "image": null,
+      "num_attachments": 1,
+      "importance_level": "normal",
+      "api_url": "https://api3.islamhouse.com/v3/paV29H2gm56kvLPy/main/get-item/2837890/ar/json",
+      "prepared_by": [
+        {
+          "id": 2828173,
+          "source_id": 2828173,
+          "title": "صلاح عامر",
+          "type": "author",
+          "kind": "author",
+          "description": null,
+          "api_url": "https://api3.islamhouse.com/v3/paV29H2gm56kvLPy/main/get-author/2828173/ar/json"
+        }
+      ],
+      "attachments": [
+        {
+          "order": 0,
+          "size": "10.04 MB",
+          "extension_type": "PDF",
+          "description": "جامع الباقيات الصالحات [ الجزء الأول ]",
+          "url": "https://d1.islamhouse.com/data/ar/ih_books/single_010/ar-jame3-al-baqiat-assalihat-ppppp.pdf"
+        }
+      ],
+      "locales": []
+    }
+  ],
+  "links": {
+    "next": "https://api3.islamhouse.com/v3/paV29H2gm56kvLPy/main/books/ar/ar/2/25/json",
+    "prev": "",
+    "first": "https://api3.islamhouse.com/v3/paV29H2gm56kvLPy/main/books/ar/ar/1/25/json",
+    "last": "https://api3.islamhouse.com/v3/paV29H2gm56kvLPy/main/books/ar/ar/197/25/json",
+    "current_page": 1,
+    "pages_number": 197,
+    "total_items": 4924
+  }
+}

@@ -1,0 +1,176 @@
+{
+  "id": 2838113,
+  "sourceid": 2838113,
+  "source_id": 2838113,
+  "title": "السرد المجود لصحيح مسلم",
+  "description": "سلسلة محاضرات صوتية، وفيها تعليقات الشيخ صالح العصيمي - أثابه الله - على صحيح مسلم للإمام مسلم بن الحجاج النيسابوري - رحمه الله -، وقد كان هذا ضمن برنامج السرد المجود لعام 1439هـ.",
+  "full_description": null,
+  "type": "audios",
+  "add_date": 1703540521,
+  "update_date": 1703540521,
+  "orginal_item": "yes",
+  "translation_language": "ar",
+  "source_language": "ar",
+  "display_box_mp4_default": 1,
+  "image": null,
+  "locales": [
+    "ar"
+  ],
+  "locales-types": {
+    "ar": {
+      "locale": "ar",
+      "type": "audios"
+    }
+  },
+  "case": "published",
+  "importance_level": "normal",
+  "hits": 24,
+  "prepared_by": [
+    {
+      "id": 8403,
+      "source_id": 8403,
+      "title": "صالح بن عبد الله بن حمد العصيمي",
+      "type": "author",
+      "kind": "author",
+      "description": "<p>هو الشيخ صالح بن عبد الله بنِ حمد العصيمي - أبو عمر - ولد في الرياض عام 1391هـ، وتخرج في جامعة الإمام محمد بن سعود، وحصل على الماجستير في علوم الحديث من جامعة أم القرى، وقد تتلمذ على يد الكثير من أهل العلم في نجد وخارجها.</p>",
+      "api_url": "https://api3.islamhouse.com/v3/paV29H2gm56kvLPy/main/get-author/8403/ar/json"
+    },
+    {
+      "id": 426482,
+      "source_id": 426482,
+      "title": "برامج الدعوة والإرشاد للشيخ صالح العصيمي",
+      "type": "source",
+      "kind": "source",
+      "description": "موقع برامج الدعوة والإرشاد، هو موقع يحتوي على مجموعة نفيسة من دروس ومحاضرات فضيلة الشيخ صالح بن عبد الله بن حمد العصيمي - أثابه الله -.\r\n",
+      "api_url": "https://api3.islamhouse.com/v3/paV29H2gm56kvLPy/main/get-author/426482/ar/json"
+    }
+  ],
+  "attachments": [
+    {
+      "order": 0,
+      "size": "155.02 MB",
+      "extension_type": "MP3",
+      "description": "المقدمة",
+      "url": "https://d1.islamhouse.com/data/ar/ih_sounds/chain_02/sard-mojawd-sa7ee7-moslem-osaime/ar-01-sard-mojawd-sa7ee7-moslem-osaime.mp3"
+    },
+    {
+      "order": 1,
+      "size": "18.64 MB",
+      "extension_type": "MP3",
+      "description": "بداية من باب غلظ تحريم قتل الإنسان نفسه، وإن من قتل نفسه بشيء عذب به في النار، وأنه لا يدخل الجنة إلا نفس مسلمة",
+      "url": "https://d1.islamhouse.com/data/ar/ih_sounds/chain_02/sard-mojawd-sa7ee7-moslem-osaime/ar-02-sard-mojawd-sa7ee7-moslem-osaime.mp3"
+    },
+    {
+      "order": 2,
+      "size": "119.84 MB",
+      "extension_type": "MP3",
+      "description": "بداية من باب وعيد من اقتطع حق مسلم بيمين فاجرة بالنار",
+      "url": "https://d1.islamhouse.com/data/ar/ih_sounds/chain_02/sard-mojawd-sa7ee7-moslem-osaime/ar-03-sard-mojawd-sa7ee7-moslem-osaime.mp3"
+    },
+    {
+      "order": 3,
+      "size": "155.73 MB",
+      "extension_type": "MP3",
+      "description": "بداية من باب السواك",
+      "url": "https://d1.islamhouse.com/data/ar/ih_sounds/chain_02/sard-mojawd-sa7ee7-moslem-osaime/ar-04-sard-mojawd-sa7ee7-moslem-osaime.mp3"
+    },
+    {
+      "order": 4,
+      "size": "149.43 MB",
+      "extension_type": "MP3",
+      "description": "بداية من باب متابعة الإمام والعمل بعده",
+      "url": "https://d1.islamhouse.com/data/ar/ih_sounds/chain_02/sard-mojawd-sa7ee7-moslem-osaime/ar-05-sard-mojawd-sa7ee7-moslem-osaime.mp3"
+    },
+    {
+      "order": 5,
+      "size": "157.34 MB",
+      "extension_type": "MP3",
+      "description": "بداية من باب المشي إلى الصلاة تُمحى به الخطايا وتُرفع به الدرجات",
+      "url": "https://d1.islamhouse.com/data/ar/ih_sounds/chain_02/sard-mojawd-sa7ee7-moslem-osaime/ar-06-sard-mojawd-sa7ee7-moslem-osaime.mp3"
+    },
+    {
+      "order": 6,
+      "size": "155.98 MB",
+      "extension_type": "MP3",
+      "description": "بداية من كتاب الجمعة",
+      "url": "https://d1.islamhouse.com/data/ar/ih_sounds/chain_02/sard-mojawd-sa7ee7-moslem-osaime/ar-07-sard-mojawd-sa7ee7-moslem-osaime.mp3"
+    },
+    {
+      "order": 7,
+      "size": "165.72 MB",
+      "extension_type": "MP3",
+      "description": "بداية من باب كراهة المسألة للناس",
+      "url": "https://d1.islamhouse.com/data/ar/ih_sounds/chain_02/sard-mojawd-sa7ee7-moslem-osaime/ar-08-sard-mojawd-sa7ee7-moslem-osaime.mp3"
+    },
+    {
+      "order": 8,
+      "size": "161.53 MB",
+      "extension_type": "MP3",
+      "description": "بداية من باب جواز حلق الرأس للمحرم إذا كان به أذى، ووجوب الفدية لحلقه، وبيان قدرها",
+      "url": "https://d1.islamhouse.com/data/ar/ih_sounds/chain_02/sard-mojawd-sa7ee7-moslem-osaime/ar-09-sard-mojawd-sa7ee7-moslem-osaime.mp3"
+    },
+    {
+      "order": 9,
+      "size": "144.56 MB",
+      "extension_type": "MP3",
+      "description": "بداية من باب من أراد أهل المدينة بسوء أذابه الله",
+      "url": "https://d1.islamhouse.com/data/ar/ih_sounds/chain_02/sard-mojawd-sa7ee7-moslem-osaime/ar-10-sard-mojawd-sa7ee7-moslem-osaime.mp3"
+    },
+    {
+      "order": 10,
+      "size": "165.82 MB",
+      "extension_type": "MP3",
+      "description": "بداية من كتاب البيوع",
+      "url": "https://d1.islamhouse.com/data/ar/ih_sounds/chain_02/sard-mojawd-sa7ee7-moslem-osaime/ar-11-sard-mojawd-sa7ee7-moslem-osaime.mp3"
+    },
+    {
+      "order": 11,
+      "size": "156.93 MB",
+      "extension_type": "MP3",
+      "description": "بداية من باب القسامة",
+      "url": "https://d1.islamhouse.com/data/ar/ih_sounds/chain_02/sard-mojawd-sa7ee7-moslem-osaime/ar-12-sard-mojawd-sa7ee7-moslem-osaime.mp3"
+    },
+    {
+      "order": 12,
+      "size": "168.4 MB",
+      "extension_type": "MP3",
+      "description": "بداية من كتاب الإمارة",
+      "url": "https://d1.islamhouse.com/data/ar/ih_sounds/chain_02/sard-mojawd-sa7ee7-moslem-osaime/ar-13-sard-mojawd-sa7ee7-moslem-osaime.mp3"
+    },
+    {
+      "order": 13,
+      "size": "160.16 MB",
+      "extension_type": "MP3",
+      "description": "بداية من كتاب الأشربة",
+      "url": "https://d1.islamhouse.com/data/ar/ih_sounds/chain_02/sard-mojawd-sa7ee7-moslem-osaime/ar-14-sard-mojawd-sa7ee7-moslem-osaime.mp3"
+    },
+    {
+      "order": 14,
+      "size": "169.12 MB",
+      "extension_type": "MP3",
+      "description": "بداية من كتاب السلام",
+      "url": "https://d1.islamhouse.com/data/ar/ih_sounds/chain_02/sard-mojawd-sa7ee7-moslem-osaime/ar-15-sard-mojawd-sa7ee7-moslem-osaime.mp3"
+    },
+    {
+      "order": 15,
+      "size": "129.07 MB",
+      "extension_type": "MP3",
+      "description": "بداية من كتاب فضائل الصحابة رضي الله عنهم",
+      "url": "https://d1.islamhouse.com/data/ar/ih_sounds/chain_02/sard-mojawd-sa7ee7-moslem-osaime/ar-16-sard-mojawd-sa7ee7-moslem-osaime.mp3"
+    },
+    {
+      "order": 16,
+      "size": "183.83 MB",
+      "extension_type": "MP3",
+      "description": "بداية من كتاب البر والصلة والآداب",
+      "url": "https://d1.islamhouse.com/data/ar/ih_sounds/chain_02/sard-mojawd-sa7ee7-moslem-osaime/ar-17-sard-mojawd-sa7ee7-moslem-osaime.mp3"
+    },
+    {
+      "order": 17,
+      "size": "228.6 MB",
+      "extension_type": "MP3",
+      "description": "بداية من كتاب الجنة وصفة نعيمها وأهلها",
+      "url": "https://d1.islamhouse.com/data/ar/ih_sounds/chain_02/sard-mojawd-sa7ee7-moslem-osaime/ar-18-sard-mojawd-sa7ee7-moslem-osaime.mp3"
+    }
+  ]
+}

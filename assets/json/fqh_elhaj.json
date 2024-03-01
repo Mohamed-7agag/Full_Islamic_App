@@ -1,0 +1,100 @@
+{
+  "id": 2834727,
+  "source_id": 2834727,
+  "title": "فقه حج المريض",
+  "type": "videos",
+  "add_date": 1655812019,
+  "update_date": 1655812020,
+  "description": "سلسلة حلقات لفضيلة أ.د/ عبدالسلام الشويعر - أثابه الله - تحدث فيها عن فقه الحج للمريض.",
+  "full_description": null,
+  "source_language": "ar",
+  "translated_language": "ar",
+  "image": "https://d1.islamhouse.com/data/ar/ih_videos/pic/pic_index/2834727.jpg",
+  "num_attachments": 13,
+  "importance_level": "normal",
+  "api_url": "https://api3.islamhouse.com/v3/paV29H2gm56kvLPy/main/get-item/2834727/ar/json",
+  "prepared_by": [
+    {
+      "id": 2826480,
+      "source_id": 2826480,
+      "title": "عبد السلام بن محمد الشويعر",
+      "type": "author",
+      "kind": "author",
+      "description": "هو الشيخ الدكتور عبد السلام بن محمد الشويعر - أثابه الله -، وقد حصل على البكالوريوس من كلية الشريعة بالرياض سنة 1415 - 1416هـ، وشهادة الماجستير في الفقه المقارن من المعهد العالي للقضاء عام 1418هـ، وشهادة الدكتوراه في الفقه المقارن من المعهد العالي للقضاء التابع لجامعة الإمام محمد بن سعود الإسلامية بالرياض سنة 1421هـ بمرتبة الشرف الأولى، وقد عمل كأستاذ مساعد في قسم العلوم الشرعية والقانونية في كلية الملك فهد الأمنية سنة 1421 - 1426هـ، وعمل كأستاذ مشارك في الكلية ذاتها سنة 1426هـ، وله العديد من المؤلفات والبحوث المنشورة، وشارك ببحوث علمية في العديد من المؤتمرات والندوات.",
+      "api_url": "https://api3.islamhouse.com/v3/paV29H2gm56kvLPy/main/get-author/2826480/ar/json"
+    }
+  ],
+  "attachments": [
+    {
+      "order": 0,
+      "size": "37.79 MB",
+      "extension_type": "MP4",
+      "description": "حج المريض ( أحكام الحج )",
+      "url": "https://d1.islamhouse.com/data/ar/ih_videos/mp4/chain/hajj_almreed/ar_01_hajj_almreed.mp4"
+    },
+    {
+      "order": 1,
+      "size": "37.79 MB",
+      "extension_type": "MP4",
+      "description": "حج المريض ( التخفيف على المريض )",
+      "url": "https://d1.islamhouse.com/data/ar/ih_videos/mp4/chain/hajj_almreed/ar_02_hajj_almreed.mp4"
+    },
+    {
+      "order": 2,
+      "size": "38.86 MB",
+      "extension_type": "MP4",
+      "description": "حج المريض ( النيابة والتوكيل )",
+      "url": "https://d1.islamhouse.com/data/ar/ih_videos/mp4/chain/hajj_almreed/ar_03_hajj_almreed.mp4"
+    },
+    {
+      "order": 3,
+      "size": "37.73 MB",
+      "extension_type": "MP4",
+      "description": "حج المريض ( الإحرام )",
+      "url": "https://d1.islamhouse.com/data/ar/ih_videos/mp4/chain/hajj_almreed/ar_04_hajj_almreed.mp4"
+    },
+    {
+      "order": 4,
+      "size": "39.44 MB",
+      "extension_type": "MP4",
+      "description": "حج المريض ( أركان الحج والعمرة )",
+      "url": "https://d1.islamhouse.com/data/ar/ih_videos/mp4/chain/hajj_almreed/ar_05_hajj_almreed.mp4"
+    },
+    {
+      "order": 5,
+      "size": "36.12 MB",
+      "extension_type": "MP4",
+      "description": "حج المريض ( واجبات الحج )",
+      "url": "https://d1.islamhouse.com/data/ar/ih_videos/mp4/chain/hajj_almreed/ar_06_hajj_almreed.mp4"
+    },
+    {
+      "order": 6,
+      "size": "37.81 MB",
+      "extension_type": "MP4",
+      "description": "حج المريض ( محظورات الإحرام للمريض )",
+      "url": "https://d1.islamhouse.com/data/ar/ih_videos/mp4/chain/hajj_almreed/ar_07_hajj_almreed.mp4"
+    },
+    {
+      "order": 7,
+      "size": "36.37 MB",
+      "extension_type": "MP4",
+      "description": "حج المريض ( عرفة )",
+      "url": "https://d1.islamhouse.com/data/ar/ih_videos/mp4/chain/hajj_almreed/ar_08_hajj_almreed.mp4"
+    },
+    {
+      "order": 8,
+      "size": "40.39 MB",
+      "extension_type": "MP4",
+      "description": "حج المريض ( كيف يرمي المريض )",
+      "url": "https://d1.islamhouse.com/data/ar/ih_videos/mp4/chain/hajj_almreed/ar_09_hajj_almreed.mp4"
+    },
+    {
+      "order": 9,
+      "size": "32.38 MB",
+      "extension_type": "MP4",
+      "description": "حج المريض ( أعمال أول أيام التشريق للمريض )",
+      "url": "https://d1.islamhouse.com/data/ar/ih_videos/mp4/chain/hajj_almreed/ar_10_hajj_almreed.mp4"
+    }
+  ],
+  "locales": []
+}
