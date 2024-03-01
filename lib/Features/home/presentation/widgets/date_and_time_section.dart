@@ -26,7 +26,7 @@ class DateAndTimeSection extends StatelessWidget {
                   buildDayAndMonth(state),
                   SizedBox(height: 5.h),
                   buildDate(state),
-                  SizedBox(height: 25.h),
+                  SizedBox(height: 30.h),
                 ],
               );
             },

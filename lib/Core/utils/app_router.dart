@@ -65,9 +65,18 @@ class AppRouter {
         );
       //! homeViewRoute
       case homeViewRoute:
+      String formattedDate = DateFormat('dd-MM-yyyy').format(DateTime.now());
         return MaterialPageRoute(
-          builder: (context) => BlocProvider(
-            create: (context) => DateTimeCubit(),
+          builder: (context) => MultiBlocProvider(
+            providers: [
+              BlocProvider(
+                create: (context) => DateTimeCubit(),
+              ),
+              BlocProvider(
+                create: (context) => PrayerCubit(getIt.get<PrayerRepoImplement>())
+              ..getPrayerTiming(date: formattedDate)
+              ),
+            ],
             child: const HomeView(),
           ),
         );
@@ -198,8 +207,7 @@ class AppRouter {
       case textViewRoute:
         var args = settings.arguments as CategoriesModel1;
         return MaterialPageRoute(
-          builder: (context) =>  TextView(categoriesModel1: args),
-          
+          builder: (context) => TextView(categoriesModel1: args),
         );
       //! quranCategoryViewRoute
       case quranCategoryViewRoute:

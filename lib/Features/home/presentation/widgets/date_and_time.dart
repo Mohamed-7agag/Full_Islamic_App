@@ -8,7 +8,7 @@ Widget buildDate(DateTime dateTime) {
   String formattedDate = DateFormat('dd/MM/yyyy').format(dateTime);
   return Text(
     formattedDate,
-    style: Styles.textStyle16,
+    style: Styles.textStyle16.copyWith(fontSize: 15.sp),
   );
 }
 
@@ -26,5 +26,5 @@ Widget buildDayAndMonth(DateTime dateTime) {
       DateFormat('MMMM , EEEE', 'ar').format(dateTime);
 
   return Text(formattedDayAndMonth,
-      style: Styles.textStyle20.copyWith(fontSize: 19.sp));
+      style: Styles.textStyle16.copyWith(fontSize: 15.sp));
 }
