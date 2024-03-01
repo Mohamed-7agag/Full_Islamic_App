@@ -2,6 +2,7 @@ import 'package:advanced_quran_app/Core/utils/app_router.dart';
 import 'package:advanced_quran_app/Core/utils/constants.dart';
 import 'package:advanced_quran_app/Core/utils/service_locator.dart';
 import 'package:advanced_quran_app/Features/categories/presentation/view_model/favourite_cubit.dart';
+import 'package:advanced_quran_app/Features/quran/presentation/view_model/favourite_surah_cubit.dart';
 import 'package:advanced_quran_app/Features/splash/presentation/views/splash_view.dart';
 import 'package:advanced_quran_app/cache/cache_helper.dart';
 import 'package:flutter/material.dart';
@@ -13,8 +14,15 @@ void main() {
   WidgetsFlutterBinding.ensureInitialized();
   CacheHelper.init();
   setUp();
-  runApp(BlocProvider(
-    create: (context) => FavouriteCubit()..getFavouriteList(),
+  runApp(MultiBlocProvider(
+    providers: [
+      BlocProvider(
+        create: (context) => FavouriteCubit()..getFavouriteList(),
+      ),
+      BlocProvider(
+        create: (context) => FavouriteSurahCubit()..getFavouriteSurahList(),
+      ),
+    ],
     child: const MyApp(),
   ));
 }

@@ -41,11 +41,11 @@ class FavouriteCubit extends Cubit<FavouriteState> {
   List<CategoriesModel1> getFavouriteList() {
     List<String> savedList = CacheHelper.getStringList(key: favouriteKey);
 
-    List<CategoriesModel1> subscribedChannel = [];
+    List<CategoriesModel1> favouriteList = [];
     for (var element in savedList) {
-      subscribedChannel.add(CategoriesModel1.fromJson(json.decode(element)));
+      favouriteList.add(CategoriesModel1.fromJson(json.decode(element)));
     }
     emit(FavouriteState.getliststate);
-    return subscribedChannel;
+    return favouriteList;
   }
 }

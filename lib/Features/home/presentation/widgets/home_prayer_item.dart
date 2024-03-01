@@ -33,12 +33,12 @@ class HomePrayerItem extends StatelessWidget {
                 imagePath,
                 width: 40.w,
               ),
-              Text(prayerTiming, style: Styles.textStyle23),
+              Text(prayerTiming, style: Styles.textStyle20),
             ],
           ),
           Text(
             formattedTime,
-            style: Styles.textStyle20,
+            style: Styles.textStyle18,
             textAlign: TextAlign.end,
           )
         ],

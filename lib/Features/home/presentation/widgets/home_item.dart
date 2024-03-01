@@ -30,7 +30,7 @@ class HomeItem extends StatelessWidget {
               Text(
                 textAlign: TextAlign.center,
                 text,
-                style: Styles.textStyle18.copyWith(color: Colors.white),
+                style: Styles.textStyle18,
               ),
             ],
           ),

@@ -24,36 +24,34 @@ class CategoriesViewBody extends StatelessWidget {
           top: 0,
           left: 0,
           right: 0,
-          child: AppBar(
-            elevation: 0,
-            backgroundColor: Colors.transparent,
-            centerTitle: true,
-            leading: IconButton(
+          child: Padding(
+            padding:  EdgeInsets.only(right: 10.w),
+            child: AppBar(
+              elevation: 0,
+              backgroundColor: Colors.transparent,
+              centerTitle: true,
+              leading: IconButton(
                 onPressed: () {
                   Navigator.pop(context);
                 },
                 icon: const Icon(
                   Icons.arrow_back_ios_new_rounded,
                   color: Colors.white,
-                )),
-            title: Text("منوعات أسلامية", style: Styles.textStyle23),
+                ),
+              ),
+              actions: [
+                IconButton(onPressed: (){
+                  Navigator.pushNamed(context, AppRouter.favouriteViewRoute);
+                }, icon: Icon(Icons.favorite_border_rounded,size: 28.sp,color: Colors.white,))
+              ],
+              title: Text("منوعات أسلامية", style: Styles.textStyle23),
+            ),
           ),
         ),
         Padding(
           padding: EdgeInsets.only(left: 15.w, right: 15.w, top: 70.h),
           child: Column(
             children: [
-              CategoriesViewItem(
-                text: "المفضلة",
-                icon: Padding(
-                  padding: const EdgeInsets.only(left: 3),
-                  child: Image.asset("assets/images/heart.png", width: 35.w),
-                ),
-                onTap: () {
-                  Navigator.pushNamed(context, AppRouter.favouriteViewRoute);
-                },
-              ),
-              SizedBox(height: 12.h),
               CategoriesViewItem(
                 text: "السيرة النبوية",
                 icon: Image.asset("assets/images/mohamed.png", width: 42.w),

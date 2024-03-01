@@ -1,3 +1,4 @@
+import 'package:advanced_quran_app/Features/home/presentation/widgets/custom_drawer.dart';
 import 'package:advanced_quran_app/Features/home/presentation/widgets/home_view_body.dart';
 import 'package:flutter/material.dart';
 
@@ -6,8 +7,12 @@ class HomeView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: SafeArea(child: HomeViewBody()),
+    return Scaffold(
+      drawer: Drawer(
+        width: MediaQuery.of(context).size.width / 1.4,
+        child: const CustomDrawer(),
+      ),
+      body: const SafeArea(child: HomeViewBody()),
     );
   }
 }

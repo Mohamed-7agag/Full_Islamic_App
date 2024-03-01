@@ -1,18 +1,15 @@
-// ignore_for_file: use_build_context_synchronously
 import 'package:advanced_quran_app/Core/utils/app_router.dart';
-import 'package:advanced_quran_app/Core/utils/constants.dart';
 import 'package:advanced_quran_app/Core/utils/custom_loading_widget.dart';
 import 'package:advanced_quran_app/Core/utils/styles.dart';
 import 'package:advanced_quran_app/Features/home/presentation/widgets/date_and_time_section.dart';
 import 'package:advanced_quran_app/Features/home/presentation/widgets/home_item.dart';
 import 'package:advanced_quran_app/Features/home/presentation/widgets/home_prayer_item.dart';
 import 'package:advanced_quran_app/Features/quran/data/local_data.dart';
-import 'package:advanced_quran_app/cache/cache_helper.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:google_fonts/google_fonts.dart';
-
 import '../../../../Core/utils/custom_error_widget.dart';
 import '../../../prayer/presentation/view_model/prayer_cubit/prayer_cubit.dart';
 
@@ -35,33 +32,20 @@ class HomeViewBody extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Padding(
-                padding: EdgeInsets.only(left: 15.w, right: 15.w,top: 5.h),
+                padding: EdgeInsets.only(left: 15.w, right: 15.w, top: 5.h),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   crossAxisAlignment: CrossAxisAlignment.end,
                   children: [
-                    // Padding(
-                    //   padding: EdgeInsets.only(left: 6.w),
-                    //   child: InkWell(
-                    //       onTap: () async {
-                    //         if (await CacheHelper.containsKey(key: "mark")) {
-                    //           Navigator.pushNamed(
-                    //               context, AppRouter.quranViewRoute,
-                    //               arguments: CacheHelper.getData(key: "mark"));
-                    //         } else {
-                    //           Navigator.pushNamed(
-                    //               context, AppRouter.quranViewRoute,
-                    //               arguments: 0);
-                    //         }
-                    //       },
-                    //       child: Image.asset(
-                    //         "assets/images/bookmark.png",
-                    //         width: 20.w,
-                    //         height: 45.h,
-                    //         fit: BoxFit.fitHeight,
-                    //       )),
-                    // ),
-                    Image.asset("assets/images/drawer.png",width: 33.w,),
+                    InkWell(
+                      onTap: () {
+                        Scaffold.of(context).openDrawer();
+                      },
+                      child: SvgPicture.asset(
+                        "assets/images/drawer.svg",
+                        width: 33.w,
+                      ),
+                    ),
                     Text(
                       "الرفيق",
                       style: GoogleFonts.blakaHollow(
@@ -78,13 +62,30 @@ class HomeViewBody extends StatelessWidget {
               SizedBox(height: 20.h),
               Padding(
                 padding: EdgeInsets.only(left: 15.w, right: 15.w),
-                child: Align(
-                    alignment: Alignment.centerRight,
-                    child: Text("مواقيت الصلاة", style: Styles.textStyle20)),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Row(
+                      children: [
+                        Icon(
+                          Icons.arrow_back_rounded,
+                          size: 16.sp,
+                          color: Colors.white,
+                        ),
+                        SizedBox(width: 3.w),
+                        Text(
+                          "المزيد",
+                          style: Styles.textStyle16.copyWith(fontSize: 14.sp),
+                        ),
+                      ],
+                    ),
+                    Text("مواقيت الصلاة", style: Styles.textStyle20),
+                  ],
+                ),
               ),
               SizedBox(height: 15.h),
               Padding(
-                padding: EdgeInsets.only(left: 10.w),
+                padding: EdgeInsets.only(left: 0.w),
                 child: SizedBox(
                   height: 90.h,
                   child: BlocBuilder<PrayerCubit, PrayerState>(
@@ -102,7 +103,7 @@ class HomeViewBody extends StatelessWidget {
                           itemCount: 5,
                           itemBuilder: (BuildContext context, int index) {
                             return Padding(
-                              padding: EdgeInsets.only(right: 10.w),
+                              padding: EdgeInsets.only(right: 5.w, left: 5.w),
                               child: HomePrayerItem(
                                 imagePath: prayerImagePath[index],
                                 prayerTiming: prayerTiming[index],
@@ -126,12 +127,12 @@ class HomeViewBody extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     HomeItem(
-                      text: "المسبحة",
+                      text: "المسبحة\nالاكترونية",
                       onpressed: () {
                         Navigator.pushNamed(context, AppRouter.sibhaViewRoute);
                       },
                       icon: Image.asset(
-                        "assets/images/sibha.png",
+                        "assets/images/tasbih.png",
                         width: 52.w,
                       ),
                     ),

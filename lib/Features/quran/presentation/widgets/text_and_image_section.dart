@@ -17,7 +17,7 @@ class TextAndImageSection extends StatelessWidget {
         ),
         SizedBox(height: 25.h),
         Container(
-            padding: EdgeInsets.symmetric(horizontal: 20.w),
+            padding: EdgeInsets.symmetric(horizontal: 22.w),
             width: MediaQuery.of(context).size.width - 70,
             height: 350.h,
             decoration: BoxDecoration(
@@ -25,6 +25,7 @@ class TextAndImageSection extends StatelessWidget {
                 borderRadius: BorderRadius.circular(18.r)),
             child: Image.asset(
               "assets/images/music.png",
+              
             )),
         SizedBox(height: 20.h),
         Text(

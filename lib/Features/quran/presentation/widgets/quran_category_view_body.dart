@@ -1,12 +1,14 @@
+// ignore_for_file: use_build_context_synchronously
 import 'package:advanced_quran_app/Core/utils/styles.dart';
 import 'package:advanced_quran_app/Features/quran/presentation/widgets/quran_audio_list_view.dart';
 import 'package:advanced_quran_app/Features/quran/presentation/widgets/quran_list_view.dart';
+import 'package:advanced_quran_app/cache/cache_helper.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import '../../../../Core/utils/app_router.dart';
 
 class QuranCategoryViewBody extends StatelessWidget {
   const QuranCategoryViewBody({super.key});
-
   @override
   Widget build(BuildContext context) {
     return Stack(
@@ -21,16 +23,48 @@ class QuranCategoryViewBody extends StatelessWidget {
         ),
         DefaultTabController(
           initialIndex: 1,
-          length: 2, 
+          length: 2,
           child: Column(
             children: <Widget>[
               Column(
                 children: [
                   Padding(
-                    padding: EdgeInsets.only(top: 10.h, bottom: 15.h),
-                    child: Text(
-                      "القرآن الكريم",
-                      style: Styles.textStyle23,
+                    padding: EdgeInsets.only(
+                        top: 5.h, bottom: 15.h, left: 4.w, right: 14.w),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        IconButton(
+                          onPressed: () {
+                            Navigator.pushNamed(
+                                context, AppRouter.favouriteSurahViewRoute);
+                          },
+                          icon: Icon(
+                            Icons.favorite_border_rounded,
+                            size: 28.sp,
+                            color: Colors.white,
+                          ),
+                        ),
+                        Text(
+                          "القرآن الكريم",
+                          style: Styles.textStyle23,
+                        ),
+                        InkWell(
+                          onTap: () async {
+                            if (await CacheHelper.containsKey(key: "mark")) {
+                              Navigator.pushNamed(
+                                  context, AppRouter.quranViewRoute,
+                                  arguments: CacheHelper.getData(key: "mark"));
+                            } else {
+                              Navigator.pushNamed(
+                                  context, AppRouter.quranViewRoute,
+                                  arguments: 0);
+                            }
+                          },
+                          child: Image.asset("assets/images/bookmark.png",
+                              width: 28.w),
+                        ),
+                      ],
                     ),
                   ),
                   const TabBar(

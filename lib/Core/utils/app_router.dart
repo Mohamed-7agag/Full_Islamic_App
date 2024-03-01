@@ -23,6 +23,7 @@ import 'package:advanced_quran_app/Features/prayer/presentation/views/prayer_vie
 import 'package:advanced_quran_app/Features/quran/data/local_data.dart';
 import 'package:advanced_quran_app/Features/quran/data/models/quran_audio_model/quran_audio_model.dart';
 import 'package:advanced_quran_app/Features/quran/presentation/views/audio_view.dart';
+import 'package:advanced_quran_app/Features/quran/presentation/views/favourite_surah_view.dart';
 import 'package:advanced_quran_app/Features/quran/presentation/views/quran_audio_view.dart';
 import 'package:advanced_quran_app/Features/quran/presentation/views/quran_category_view.dart';
 import 'package:advanced_quran_app/Features/quran/presentation/views/quran_view.dart';
@@ -55,6 +56,7 @@ class AppRouter {
   static const String textViewRoute = "/textView";
   static const String audioViewRoute = "/audioView";
   static const String favouriteViewRoute = "/favouriteView";
+  static const String favouriteSurahViewRoute = "/favouriteSurahView";
   //! Generate Routes
   static Route<dynamic> generateRoute(RouteSettings settings) {
     switch (settings.name) {
@@ -65,7 +67,7 @@ class AppRouter {
         );
       //! homeViewRoute
       case homeViewRoute:
-      String formattedDate = DateFormat('dd-MM-yyyy').format(DateTime.now());
+        String formattedDate = DateFormat('dd-MM-yyyy').format(DateTime.now());
         return MaterialPageRoute(
           builder: (context) => MultiBlocProvider(
             providers: [
@@ -73,9 +75,9 @@ class AppRouter {
                 create: (context) => DateTimeCubit(),
               ),
               BlocProvider(
-                create: (context) => PrayerCubit(getIt.get<PrayerRepoImplement>())
-              ..getPrayerTiming(date: formattedDate)
-              ),
+                  create: (context) =>
+                      PrayerCubit(getIt.get<PrayerRepoImplement>())
+                        ..getPrayerTiming(date: formattedDate)),
             ],
             child: const HomeView(),
           ),
@@ -148,6 +150,11 @@ class AppRouter {
             create: (context) => AllahNamesCubit()..getData(),
             child: const AllahNamesView(),
           ),
+        );
+      //! favouriteSurahViewRoute
+      case favouriteSurahViewRoute:
+        return MaterialPageRoute(
+          builder: (context) => const FavouriteSurahView(),
         );
       //! favouriteViewRoute
       case favouriteViewRoute:
