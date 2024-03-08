@@ -5,15 +5,19 @@ import 'package:intl/intl.dart';
 import '../../../../Core/utils/constants.dart';
 
 class HomePrayerItem extends StatelessWidget {
-  const HomePrayerItem({super.key, required this.prayerTiming, required this.imagePath, required this.time});
+  const HomePrayerItem(
+      {super.key,
+      required this.prayerTiming,
+      required this.imagePath,
+      required this.time});
   final String prayerTiming;
   final String imagePath;
   final String time;
 
   @override
   Widget build(BuildContext context) {
-
-    DateTime dateTime = DateFormat('HH:mm').parse(time);
+    DateTime dateTime =
+        DateFormat('HH:mm').parse(time.substring(0, time.length - 6));
     String formattedTime = DateFormat('h:mm a').format(dateTime);
 
     return Container(
@@ -23,7 +27,6 @@ class HomePrayerItem extends StatelessWidget {
           borderRadius: BorderRadius.circular(16.r), color: kShadeWhite),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
-        
         children: [
           Row(
             crossAxisAlignment: CrossAxisAlignment.start,

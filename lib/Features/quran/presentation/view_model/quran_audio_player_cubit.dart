@@ -45,7 +45,6 @@ class AudioPlayerCubit extends Cubit<AudioPlayerStatus> {
     int newPosition = position.inSeconds + 10;
     await audioPlayer.seek(Duration(seconds: newPosition));
     emit(AudioPlayerStatus.seekForward);
-
   }
 
   void seekBackword() async {

@@ -18,6 +18,9 @@ class HomeViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    DateTime givenDate = DateTime.now();
+    DateTime firstDayOfYear = DateTime(DateTime.now().year, 1, 1);
+    int daysDifference = givenDate.difference(firstDayOfYear).inDays;
     return Stack(
       fit: StackFit.expand,
       children: [
@@ -65,59 +68,61 @@ class HomeViewBody extends StatelessWidget {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Row(
-                      children: [
-                        Icon(
-                          Icons.arrow_back_rounded,
-                          size: 16.sp,
-                          color: Colors.white,
-                        ),
-                        SizedBox(width: 3.w),
-                        Text(
-                          "المزيد",
-                          style: Styles.textStyle16.copyWith(fontSize: 14.sp),
-                        ),
-                      ],
+                    InkWell(
+                      onTap: () {
+                        Navigator.pushNamed(context, AppRouter.prayerViewRoute);
+                      },
+                      child: Row(
+                        children: [
+                          Icon(
+                            Icons.arrow_back_rounded,
+                            size: 16.sp,
+                            color: Colors.white,
+                          ),
+                          SizedBox(width: 3.w),
+                          Text(
+                            "المزيد",
+                            style: Styles.textStyle16.copyWith(fontSize: 14.sp),
+                          ),
+                        ],
+                      ),
                     ),
                     Text("مواقيت الصلاة", style: Styles.textStyle20),
                   ],
                 ),
               ),
               SizedBox(height: 15.h),
-              Padding(
-                padding: EdgeInsets.only(left: 0.w),
-                child: SizedBox(
-                  height: 90.h,
-                  child: BlocBuilder<PrayerCubit, PrayerState>(
-                    builder: (context, state) {
-                      if (state is PrayerSuccess) {
-                        List<String> prayerlist = [
-                          state.prayerModel.data!.timings!.fajr!,
-                          state.prayerModel.data!.timings!.dhuhr!,
-                          state.prayerModel.data!.timings!.asr!,
-                          state.prayerModel.data!.timings!.maghrib!,
-                          state.prayerModel.data!.timings!.isha!,
-                        ];
-                        return ListView.builder(
-                          scrollDirection: Axis.horizontal,
-                          itemCount: 5,
-                          itemBuilder: (BuildContext context, int index) {
-                            return Padding(
-                              padding: EdgeInsets.only(right: 5.w, left: 5.w),
-                              child: HomePrayerItem(
-                                imagePath: prayerImagePath[index],
-                                prayerTiming: prayerTiming[index],
-                                time: prayerlist[index],
-                              ),
-                            );
-                          },
-                        );
-                      } else if (state is PrayerFailure) {
-                        return CustomErrorWidget(errMessage: state.errMessage);
-                      }
-                      return const CustomLoadingWidget();
-                    },
-                  ),
+              SizedBox(
+                height: 90.h,
+                child: BlocBuilder<PrayerCubit, PrayerState>(
+                  builder: (context, state) {
+                    if (state is PrayerSuccess) {
+                      List<String> prayerlist = [
+                        state.prayerModelList[daysDifference].timings!.fajr!,
+                        state.prayerModelList[daysDifference].timings!.dhuhr!,
+                        state.prayerModelList[daysDifference].timings!.asr!,
+                        state.prayerModelList[daysDifference].timings!.maghrib!,
+                        state.prayerModelList[daysDifference].timings!.isha!,
+                      ];
+                      return ListView.builder(
+                        scrollDirection: Axis.horizontal,
+                        itemCount: 5,
+                        itemBuilder: (BuildContext context, int index) {
+                          return Padding(
+                            padding: EdgeInsets.only(right: 5.w, left: 5.w),
+                            child: HomePrayerItem(
+                              imagePath: prayerImagePath[index],
+                              prayerTiming: prayerTiming[index],
+                              time: prayerlist[index],
+                            ),
+                          );
+                        },
+                      );
+                    } else if (state is PrayerFailure) {
+                      return CustomErrorWidget(errMessage: state.errMessage);
+                    }
+                    return const CustomLoadingWidget();
+                  },
                 ),
               ),
               SizedBox(height: 30.h),

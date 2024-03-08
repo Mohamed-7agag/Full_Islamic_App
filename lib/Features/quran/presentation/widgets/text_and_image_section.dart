@@ -25,7 +25,6 @@ class TextAndImageSection extends StatelessWidget {
                 borderRadius: BorderRadius.circular(18.r)),
             child: Image.asset(
               "assets/images/music.png",
-              
             )),
         SizedBox(height: 20.h),
         Text(

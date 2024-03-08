@@ -1,3 +1,3 @@
 abstract class ApiRequests {
-  Future<dynamic> getPrayerTiming({required String date});
+  Future<dynamic> getPrayerTiming({required String year});
 }

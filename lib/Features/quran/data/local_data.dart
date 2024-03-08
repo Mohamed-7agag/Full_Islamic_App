@@ -149,18 +149,17 @@ List<dynamic> juz = [
   ["الجزء الثلاثون", 605],
 ];
 
-
 List<String> prayerTiming = [
-      "الفجر",
-      "الظهر",
-      "العصر",
-      "المغرب",
-      "العشاء",
-    ];
-    List<String> prayerImagePath = [
-      "assets/images/sunrise.png",
-      "assets/images/sun.png",
-      "assets/images/dawn.png",
-      "assets/images/sunset.png",
-      "assets/images/full-moon.png",
-    ];
+  "الفجر",
+  "الظهر",
+  "العصر",
+  "المغرب",
+  "العشاء",
+];
+List<String> prayerImagePath = [
+  "assets/images/sunrise.png",
+  "assets/images/sun.png",
+  "assets/images/dawn.png",
+  "assets/images/sunset.png",
+  "assets/images/full-moon.png",
+];

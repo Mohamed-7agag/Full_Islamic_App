@@ -25,7 +25,7 @@ class CategoriesViewBody extends StatelessWidget {
           left: 0,
           right: 0,
           child: Padding(
-            padding:  EdgeInsets.only(right: 10.w),
+            padding: EdgeInsets.only(right: 10.w),
             child: AppBar(
               elevation: 0,
               backgroundColor: Colors.transparent,
@@ -40,9 +40,16 @@ class CategoriesViewBody extends StatelessWidget {
                 ),
               ),
               actions: [
-                IconButton(onPressed: (){
-                  Navigator.pushNamed(context, AppRouter.favouriteViewRoute);
-                }, icon: Icon(Icons.favorite_border_rounded,size: 28.sp,color: Colors.white,))
+                IconButton(
+                    onPressed: () {
+                      Navigator.pushNamed(
+                          context, AppRouter.favouriteViewRoute);
+                    },
+                    icon: Icon(
+                      Icons.favorite_border_rounded,
+                      size: 28.sp,
+                      color: Colors.white,
+                    ))
               ],
               title: Text("منوعات أسلامية", style: Styles.textStyle23),
             ),

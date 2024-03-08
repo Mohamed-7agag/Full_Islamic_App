@@ -20,7 +20,8 @@ class FavouriteSurahCubit extends Cubit<FavouriteSurahState> {
       emit(FavouriteSurahState.favourite);
     } else {
       String objectStr = json.encode(object);
-    List<String> savedList = CacheHelper.getStringList(key: favouriteSurahKey);
+      List<String> savedList =
+          CacheHelper.getStringList(key: favouriteSurahKey);
       savedList.remove(objectStr);
       favouriteSurahList = savedList;
       CacheHelper.setData(key: favouriteSurahKey, value: favouriteSurahList);
@@ -37,10 +38,10 @@ class FavouriteSurahCubit extends Cubit<FavouriteSurahState> {
     emit(FavouriteSurahState.unfavourite);
   }
 
-  List<Map<String,dynamic>> getFavouriteSurahList() {
+  List<Map<String, dynamic>> getFavouriteSurahList() {
     List<String> savedList = CacheHelper.getStringList(key: favouriteSurahKey);
 
-    List<Map<String,dynamic>> favouriteList = [];
+    List<Map<String, dynamic>> favouriteList = [];
     for (var element in savedList) {
       favouriteList.add(json.decode(element));
     }

@@ -21,11 +21,11 @@ class ApiServices extends ApiRequests {
     ));
   }
 
-//! Get prayer timing for 1 day
+//! Get prayer timing for year
   @override
-  Future getPrayerTiming({required String date}) async {
+  Future getPrayerTiming({required String year}) async {
     final response = await _dio.get(
-      "$date?city=${ApiKey.city}&country=${ApiKey.country}&method=${ApiKey.method}",
+      "$year?latitude=${ApiKey.lat}&longitude=${ApiKey.lang}&method=${ApiKey.method}",
     );
     return response.data;
   }

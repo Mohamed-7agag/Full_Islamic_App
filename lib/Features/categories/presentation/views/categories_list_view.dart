@@ -2,10 +2,10 @@ import 'package:advanced_quran_app/Features/categories/presentation/widgets/cate
 import 'package:flutter/material.dart';
 
 class CategoriesListView extends StatelessWidget {
-  const CategoriesListView({super.key, required this.text, required this.category});
+  const CategoriesListView(
+      {super.key, required this.text, required this.category});
   final String text;
   final List<List<String>> category;
-  
 
   @override
   Widget build(BuildContext context) {

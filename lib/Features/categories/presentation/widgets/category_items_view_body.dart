@@ -28,7 +28,7 @@ class CategoryItemsViewBody extends StatelessWidget {
           left: 0,
           right: 0,
           child: Padding(
-            padding: EdgeInsets.only(left: 10.w,right: 18.w,top: 4.h),
+            padding: EdgeInsets.only(left: 10.w, right: 18.w, top: 4.h),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [

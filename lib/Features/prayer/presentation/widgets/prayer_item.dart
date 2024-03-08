@@ -18,7 +18,7 @@ class PrayerItem extends StatelessWidget {
     return Container(
       padding: EdgeInsets.symmetric(horizontal: 15.w),
       width: double.infinity,
-      height: 68.h,
+      height: 65.h,
       decoration: BoxDecoration(
           color: kShadeWhite, borderRadius: BorderRadius.circular(16.r)),
       child: Row(
@@ -26,15 +26,15 @@ class PrayerItem extends StatelessWidget {
         children: [
           Image.asset(
             imagePath,
-            width: 40.w,
+            width: 36.w,
           ),
           Text(
             time,
-            style: Styles.textStyle23,
+            style: Styles.textStyle20,
           ),
           Text(
             text,
-            style: Styles.textStyle23,
+            style: Styles.textStyle20,
           )
         ],
       ),

@@ -29,8 +29,8 @@ class AzkarDetailsListViewItem extends StatelessWidget {
                 .increase(azkarModel.repeat!, index);
           },
           child: Container(
-            padding:
-                 EdgeInsets.only(left: 12.w, right: 12.w, bottom: 15.h, top: 20.h),
+            padding: EdgeInsets.only(
+                left: 12.w, right: 12.w, bottom: 15.h, top: 20.h),
             width: double.infinity,
             decoration: BoxDecoration(
               color: const Color.fromRGBO(255, 255, 255, 0.09),

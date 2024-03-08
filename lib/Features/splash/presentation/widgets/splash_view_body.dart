@@ -30,8 +30,7 @@ class _SplashViewBodyState extends State<SplashViewBody> {
       ),
       Text(
         "الرفيق",
-        style: GoogleFonts.blakaHollow(
-            fontSize: 80.sp,color: Colors.white),
+        style: GoogleFonts.blakaHollow(fontSize: 80.sp, color: Colors.white),
       ),
     ]);
   }

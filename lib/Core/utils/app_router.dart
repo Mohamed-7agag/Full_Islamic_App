@@ -67,7 +67,6 @@ class AppRouter {
         );
       //! homeViewRoute
       case homeViewRoute:
-        String formattedDate = DateFormat('dd-MM-yyyy').format(DateTime.now());
         return MaterialPageRoute(
           builder: (context) => MultiBlocProvider(
             providers: [
@@ -75,9 +74,12 @@ class AppRouter {
                 create: (context) => DateTimeCubit(),
               ),
               BlocProvider(
-                  create: (context) =>
-                      PrayerCubit(getIt.get<PrayerRepoImplement>())
-                        ..getPrayerTiming(date: formattedDate)),
+                create: (context) =>
+                    PrayerCubit(getIt.get<PrayerRepoImplement>())
+                      ..loadPrayerTimings(
+                        year: DateTime.now().year.toString(),
+                      ),
+              ),
             ],
             child: const HomeView(),
           ),
@@ -233,11 +235,10 @@ class AppRouter {
         );
       //! prayerViewRoute
       case prayerViewRoute:
-        String formattedDate = DateFormat('dd-MM-yyyy').format(DateTime.now());
         return MaterialPageRoute(
           builder: (context) => BlocProvider(
             create: (context) => PrayerCubit(getIt.get<PrayerRepoImplement>())
-              ..getPrayerTiming(date: formattedDate),
+              ..loadPrayerTimings(year: DateTime.now().year.toString()),
             child: const PrayerView(),
           ),
         );

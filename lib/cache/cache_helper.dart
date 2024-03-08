@@ -24,6 +24,7 @@ class CacheHelper {
     }
   }
 
+
 //! this method to get data
   static dynamic getData({required String key}) {
     return _sharedPreferences.get(key);
@@ -46,6 +47,6 @@ class CacheHelper {
 
 //! remove all data
   static Future<bool> clearData({required String key}) async {
-    return _sharedPreferences.clear();
+    return await _sharedPreferences.clear();
   }
 }

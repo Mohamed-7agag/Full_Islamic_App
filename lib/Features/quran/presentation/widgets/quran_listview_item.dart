@@ -19,7 +19,7 @@ class QuranListViewItem extends StatelessWidget {
             arguments: posOfSurah[quranModel.id! - 1]);
       },
       child: Container(
-        padding:  EdgeInsets.symmetric(horizontal: 15.w),
+        padding: EdgeInsets.symmetric(horizontal: 15.w),
         width: double.infinity,
         height: 65.h,
         decoration: BoxDecoration(

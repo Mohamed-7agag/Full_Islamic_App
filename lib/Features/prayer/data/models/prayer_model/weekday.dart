@@ -13,9 +13,9 @@ class Weekday extends Equatable {
 
   Map<String, dynamic> toJson() => {
         'en': en,
-        'ar': ar,
+        'ar': ar
       };
 
   @override
-  List<Object?> get props => [en, ar];
+  List<Object?> get props => [en,ar];
 }

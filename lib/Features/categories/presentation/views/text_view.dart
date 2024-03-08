@@ -96,8 +96,8 @@ class TextView extends StatelessWidget {
                   children: [
                     SizedBox(height: 14.h),
                     Container(
-                      padding:
-                          EdgeInsets.only(top: 8.h, bottom: 11.h,left: 10.w,right: 10.w),
+                      padding: EdgeInsets.only(
+                          top: 8.h, bottom: 11.h, left: 10.w, right: 10.w),
                       width: double.infinity,
                       decoration: BoxDecoration(
                           color: kShadeWhite,
@@ -113,7 +113,8 @@ class TextView extends StatelessWidget {
                     SizedBox(height: 25.h),
                     Text(
                       categoriesModel1.text!,
-                      style: Styles.textStyle20.copyWith(height: 1.8.h,fontSize: 21.sp),
+                      style: Styles.textStyle20
+                          .copyWith(height: 1.8.h, fontSize: 21.sp),
                       textAlign: TextAlign.right,
                       textDirection: TextDirection.rtl,
                     ),

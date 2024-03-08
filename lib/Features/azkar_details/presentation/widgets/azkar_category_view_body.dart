@@ -39,7 +39,7 @@ class AzkarCategoryViewBody extends StatelessWidget {
           ),
         ),
         Padding(
-          padding:  EdgeInsets.only(left: 15.w, right: 15.w, top: 21.h),
+          padding: EdgeInsets.only(left: 15.w, right: 15.w, top: 21.h),
           child: SingleChildScrollView(
             child: Column(
               children: [

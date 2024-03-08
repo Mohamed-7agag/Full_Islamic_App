@@ -10,12 +10,17 @@ class PrayerRepoImplement implements PrayerRepo {
 
   PrayerRepoImplement({required this.apiServices});
   @override
-  Future<Either<Failure, PrayerModel>> getPrayerTiming(
-      {required String date}) async {
+  Future<Either<Failure, List<PrayerModel>>> getPrayerTiming(
+      {required String year}) async {
     try {
-      var data = await apiServices.getPrayerTiming(date: date);
-      PrayerModel item = PrayerModel.fromJson(data);
-      return right(item);
+      var data = await apiServices.getPrayerTiming(year: year);
+      List<PrayerModel> items = [];
+      for (int i = 1; i <= 12; i++) {
+        for (var item in data['data']['$i']) {
+          items.add(PrayerModel.fromJson(item));
+        }
+      }
+      return right(items);
     } catch (e) {
       if (e is DioException) {
         return left(ServerFailure.fromDioError(e));

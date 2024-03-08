@@ -18,7 +18,7 @@ final class PrayerFailure extends PrayerState {
 }
 
 final class PrayerSuccess extends PrayerState {
-  final PrayerModel prayerModel;
+  final List<PrayerModel> prayerModelList;
 
-  const PrayerSuccess({required this.prayerModel});
+  const PrayerSuccess({required this.prayerModelList});
 }
