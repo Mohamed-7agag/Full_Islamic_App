@@ -1,7 +1,7 @@
+import 'package:advanced_quran_app/Core/utils/format_prayer_time_function.dart';
 import 'package:advanced_quran_app/Core/utils/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:intl/intl.dart';
 import '../../../../Core/utils/constants.dart';
 
 class HomePrayerItem extends StatelessWidget {
@@ -16,10 +16,6 @@ class HomePrayerItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    DateTime dateTime =
-        DateFormat('HH:mm').parse(time.substring(0, time.length - 6));
-    String formattedTime = DateFormat('h:mm a').format(dateTime);
-
     return Container(
       padding: EdgeInsets.symmetric(horizontal: 12.w, vertical: 10.h),
       width: 168,
@@ -40,7 +36,7 @@ class HomePrayerItem extends StatelessWidget {
             ],
           ),
           Text(
-            formattedTime,
+            formatTime(time),
             style: Styles.textStyle18,
             textAlign: TextAlign.end,
           )

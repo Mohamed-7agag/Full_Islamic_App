@@ -1,5 +1,6 @@
 import 'package:advanced_quran_app/Core/api/api_requests.dart';
 import 'package:advanced_quran_app/Core/api/end_points.dart';
+import 'package:advanced_quran_app/cache/cache_helper.dart';
 import 'package:dio/dio.dart';
 
 class ApiServices extends ApiRequests {
@@ -25,7 +26,7 @@ class ApiServices extends ApiRequests {
   @override
   Future getPrayerTiming({required String year}) async {
     final response = await _dio.get(
-      "$year?latitude=${ApiKey.lat}&longitude=${ApiKey.lang}&method=${ApiKey.method}",
+      "$year?latitude=${CacheHelper.getData(key: 'lat').toString()}&longitude=${CacheHelper.getData(key: 'long').toString()}&method=${ApiKey.method}",
     );
     return response.data;
   }

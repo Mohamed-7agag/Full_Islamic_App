@@ -53,7 +53,7 @@ class MyApp extends StatelessWidget {
               );
             },
             onGenerateRoute: AppRouter.generateRoute,
-            initialRoute: AppRouter.splashViewRoute,
+            //initialRoute: AppRouter.splashViewRoute,
             debugShowCheckedModeBanner: false,
             home: const SplashView(),
           ),

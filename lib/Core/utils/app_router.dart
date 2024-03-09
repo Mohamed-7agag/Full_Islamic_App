@@ -28,9 +28,9 @@ import 'package:advanced_quran_app/Features/quran/presentation/views/quran_audio
 import 'package:advanced_quran_app/Features/quran/presentation/views/quran_category_view.dart';
 import 'package:advanced_quran_app/Features/quran/presentation/views/quran_view.dart';
 import 'package:advanced_quran_app/Features/splash/presentation/views/splash_view.dart';
+import 'package:advanced_quran_app/location_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:intl/intl.dart';
 import '../../Features/categories/presentation/view_model/categories_cubit/categories_cubit.dart';
 import '../../Features/quran/presentation/view_model/quran_audio_cubit/quran_audio_cubit.dart';
 import '../../Features/quran/presentation/view_model/quran_audio_player_cubit.dart';
@@ -57,6 +57,7 @@ class AppRouter {
   static const String audioViewRoute = "/audioView";
   static const String favouriteViewRoute = "/favouriteView";
   static const String favouriteSurahViewRoute = "/favouriteSurahView";
+  static const String locationViewRoute = "/locationViewRoute";
   //! Generate Routes
   static Route<dynamic> generateRoute(RouteSettings settings) {
     switch (settings.name) {
@@ -83,6 +84,11 @@ class AppRouter {
             ],
             child: const HomeView(),
           ),
+        );
+      // //! locationViewRoute
+      case locationViewRoute:
+        return MaterialPageRoute(
+          builder: (context) => const LocationView(),
         );
       //! categoriesListViewRoute
       case categoriesListViewRoute:

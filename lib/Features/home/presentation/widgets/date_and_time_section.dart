@@ -14,7 +14,7 @@ class DateAndTimeSection extends StatelessWidget {
       children: [
         Image.asset(
           "assets/images/im1.png",
-          width: 200.w,
+          width: 195.w,
         ),
         Expanded(
           child: BlocBuilder<DateTimeCubit, DateTime>(

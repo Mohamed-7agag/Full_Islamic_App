@@ -19,7 +19,7 @@ class CustomDrawer extends StatelessWidget {
           "assets/images/background3.png",
           width: double.infinity,
           height: double.infinity,
-          fit: BoxFit.fill,
+          fit: BoxFit.fitHeight,
         ),
         Padding(
           padding: EdgeInsets.symmetric(vertical: 40.h, horizontal: 18.w),
@@ -40,8 +40,8 @@ class CustomDrawer extends StatelessWidget {
                   ),
                   SizedBox(height: 45.h),
                   const DrawerItem(
-                      text: "تقييم", path: "assets/images/rate.png"),
-                  SizedBox(height: 28.h),
+                      text: "تقييم البرنامج", path: "assets/images/rate.png"),
+                  SizedBox(height: 30.h),
                   InkWell(
                     onTap: () {
                       Share.share("تطبيق الرفيق");
@@ -50,13 +50,13 @@ class CustomDrawer extends StatelessWidget {
                         text: "مشاركه البرنامج",
                         path: "assets/images/share.png"),
                   ),
-                  SizedBox(height: 28.h),
+                  SizedBox(height: 30.h),
                   const DrawerItem(
                       text: "مساعدة", path: "assets/images/help.png"),
-                  SizedBox(height: 28.h),
+                  SizedBox(height: 30.h),
                   const DrawerItem(
                       text: "تواصل معنا", path: "assets/images/contact.png"),
-                  SizedBox(height: 20.h),
+                  SizedBox(height: 30.h),
                 ],
               ),
               Column(
@@ -95,9 +95,9 @@ class CustomDrawer extends StatelessWidget {
                     ],
                   ),
                   SizedBox(height: 30.h),
-                  const Text(
+                  Text(
                     "© جميع الحقوق محفوظة",
-                    style: TextStyle(color: Colors.white54),
+                    style: TextStyle(color: Colors.white54, fontSize: 12.sp),
                   )
                 ],
               )

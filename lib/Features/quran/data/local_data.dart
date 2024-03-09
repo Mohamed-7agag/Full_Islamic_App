@@ -156,6 +156,19 @@ List<String> prayerTiming = [
   "المغرب",
   "العشاء",
 ];
+List<String> allPrayerTiming = [
+  "الفجر",
+  "الشروق",
+  "الظهر",
+  "العصر",
+  "الغروب",
+  "المغرب",
+  "العشاء",
+  "الإمساك",
+  "منتصف الليل",
+  "الثلث الأول",
+  "الثلث الأخير",
+];
 List<String> prayerImagePath = [
   "assets/images/sunrise.png",
   "assets/images/sun.png",
@@ -163,3 +176,17 @@ List<String> prayerImagePath = [
   "assets/images/sunset.png",
   "assets/images/full-moon.png",
 ];
+
+List<String> allPrayerImagePath = [
+      "assets/images/sunrise.png",
+      "assets/images/sunrise2.png",
+      "assets/images/sun.png",
+      "assets/images/dawn.png",
+      "assets/images/sunset2.png",
+      "assets/images/sunset.png",
+      "assets/images/full-moon.png",
+      "assets/images/no-food.png",
+      "assets/images/moon2.png",
+      "assets/images/full-moon.png",
+      "assets/images/full-moon.png",
+    ];

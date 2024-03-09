@@ -6,3 +6,6 @@ const Color kShadeWhite = Color.fromRGBO(255, 255, 255, 0.13);
 
 const String favouriteKey = "favouriteKey";
 const String favouriteSurahKey = "favouriteSurahKey";
+
+String lat = '';
+String lang = '';

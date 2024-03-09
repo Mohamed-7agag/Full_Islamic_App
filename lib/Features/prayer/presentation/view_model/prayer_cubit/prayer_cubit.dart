@@ -11,9 +11,9 @@ class PrayerCubit extends Cubit<PrayerState> {
 
   final PrayerRepo prayerRepo;
 
-  Future<void> getPrayerTiming(
-      {required String year}) async {
+  Future<void> getPrayerTiming({required String year}) async {
     emit(PrayerLoading());
+    
     var result = await prayerRepo.getPrayerTiming(year: year);
     result.fold((failure) {
       emit(PrayerFailure(errMessage: failure.errMessage));

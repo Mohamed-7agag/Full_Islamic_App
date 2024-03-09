@@ -18,9 +18,9 @@ class PrayerItem extends StatelessWidget {
     return Container(
       padding: EdgeInsets.symmetric(horizontal: 15.w),
       width: double.infinity,
-      height: 65.h,
+      height: 64.h,
       decoration: BoxDecoration(
-          color: kShadeWhite, borderRadius: BorderRadius.circular(16.r)),
+          color: kShadeWhite, borderRadius: BorderRadius.circular(15.r)),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [

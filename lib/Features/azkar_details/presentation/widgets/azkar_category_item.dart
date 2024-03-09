@@ -34,7 +34,7 @@ class AzkarCategoryItem extends StatelessWidget {
             ),
             Text(
               text,
-              style: Styles.textStyle23,
+              style: Styles.textStyle23.copyWith(fontSize: 21.sp),
             )
           ],
         ),

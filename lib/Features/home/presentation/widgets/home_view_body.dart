@@ -1,5 +1,6 @@
 import 'package:advanced_quran_app/Core/utils/app_router.dart';
 import 'package:advanced_quran_app/Core/utils/custom_loading_widget.dart';
+import 'package:advanced_quran_app/Core/utils/days_difference_function.dart';
 import 'package:advanced_quran_app/Core/utils/styles.dart';
 import 'package:advanced_quran_app/Features/home/presentation/widgets/date_and_time_section.dart';
 import 'package:advanced_quran_app/Features/home/presentation/widgets/home_item.dart';
@@ -18,9 +19,6 @@ class HomeViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    DateTime givenDate = DateTime.now();
-    DateTime firstDayOfYear = DateTime(DateTime.now().year, 1, 1);
-    int daysDifference = givenDate.difference(firstDayOfYear).inDays;
     return Stack(
       fit: StackFit.expand,
       children: [
@@ -57,7 +55,7 @@ class HomeViewBody extends StatelessWidget {
                   ],
                 ),
               ),
-              SizedBox(height: 25.h),
+              SizedBox(height: 30.h),
               Padding(
                 padding: EdgeInsets.only(left: 15.w, right: 15.w),
                 child: const DateAndTimeSection(),
@@ -73,6 +71,7 @@ class HomeViewBody extends StatelessWidget {
                         Navigator.pushNamed(context, AppRouter.prayerViewRoute);
                       },
                       child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.end,
                         children: [
                           Icon(
                             Icons.arrow_back_rounded,
@@ -87,7 +86,15 @@ class HomeViewBody extends StatelessWidget {
                         ],
                       ),
                     ),
-                    Text("مواقيت الصلاة", style: Styles.textStyle20),
+                    Row(
+                      children: [
+                        Text("( اليوم )",
+                            style:
+                                Styles.textStyle16.copyWith(fontSize: 12.sp)),
+                        SizedBox(width: 5.w),
+                        Text("مواقيت الصلاة", style: Styles.textStyle20),
+                      ],
+                    ),
                   ],
                 ),
               ),
@@ -98,11 +105,12 @@ class HomeViewBody extends StatelessWidget {
                   builder: (context, state) {
                     if (state is PrayerSuccess) {
                       List<String> prayerlist = [
-                        state.prayerModelList[daysDifference].timings!.fajr!,
-                        state.prayerModelList[daysDifference].timings!.dhuhr!,
-                        state.prayerModelList[daysDifference].timings!.asr!,
-                        state.prayerModelList[daysDifference].timings!.maghrib!,
-                        state.prayerModelList[daysDifference].timings!.isha!,
+                        state.prayerModelList[dayDifference()].timings!.fajr!,
+                        state.prayerModelList[dayDifference()].timings!.dhuhr!,
+                        state.prayerModelList[dayDifference()].timings!.asr!,
+                        state
+                            .prayerModelList[dayDifference()].timings!.maghrib!,
+                        state.prayerModelList[dayDifference()].timings!.isha!,
                       ];
                       return ListView.builder(
                         scrollDirection: Axis.horizontal,
