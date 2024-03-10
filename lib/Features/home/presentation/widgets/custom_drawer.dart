@@ -51,11 +51,22 @@ class CustomDrawer extends StatelessWidget {
                         path: "assets/images/share.png"),
                   ),
                   SizedBox(height: 30.h),
-                  const DrawerItem(
-                      text: "مساعدة", path: "assets/images/help.png"),
+                  InkWell(
+                    onTap: () {
+                      customUrlLauncher(context,
+                          "https://www.facebook.com/mageko.el?mibextid=ZbWKwL");
+                    },
+                    child: const DrawerItem(
+                        text: "مساعدة", path: "assets/images/help.png"),
+                  ),
                   SizedBox(height: 30.h),
-                  const DrawerItem(
-                      text: "تواصل معنا", path: "assets/images/contact.png"),
+                  InkWell(
+                    onTap: () {
+                      customUrlLauncher(context, "https://wa.me/01203435611");
+                    },
+                    child: const DrawerItem(
+                        text: "تواصل معنا", path: "assets/images/contact.png"),
+                  ),
                   SizedBox(height: 30.h),
                 ],
               ),
@@ -64,13 +75,25 @@ class CustomDrawer extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      Image.asset(
-                        "assets/images/facebook.png",
-                        width: 40.w,
+                      InkWell(
+                        onTap: () {
+                          customUrlLauncher(context,
+                              "https://www.facebook.com/mageko.el?mibextid=ZbWKwL");
+                        },
+                        child: Image.asset(
+                          "assets/images/facebook.png",
+                          width: 40.w,
+                        ),
                       ),
-                      Image.asset(
-                        "assets/images/telegram.png",
-                        width: 40.w,
+                      InkWell(
+                        onTap: () {
+                          customUrlLauncher(
+                              context, "https://t.me/01203435611");
+                        },
+                        child: Image.asset(
+                          "assets/images/telegram.png",
+                          width: 40.w,
+                        ),
                       ),
                       InkWell(
                         onTap: () {

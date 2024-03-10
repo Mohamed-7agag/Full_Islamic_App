@@ -24,7 +24,7 @@ Widget buildTime(DateTime dateTime) {
 Widget buildDayAndMonth(DateTime dateTime) {
   initializeDateFormatting();
   String formattedDayAndMonth =
-      DateFormat('MMMM , EEEE', 'ar').format(dateTime);
+      DateFormat('EEEE , d MMMM', 'ar').format(dateTime);
 
   return Text(formattedDayAndMonth,
       style: Styles.textStyle16.copyWith(fontSize: 15.sp));

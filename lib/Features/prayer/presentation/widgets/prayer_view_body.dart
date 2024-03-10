@@ -42,7 +42,7 @@ class PrayerViewBody extends StatelessWidget {
                   Icons.arrow_back_ios_new_rounded,
                   color: Colors.white,
                 )),
-            title: Text("مواقيت الصلاة", style: Styles.textStyle23),
+            title: Text("المواقيت", style: Styles.textStyle23),
           ),
         ),
         Padding(

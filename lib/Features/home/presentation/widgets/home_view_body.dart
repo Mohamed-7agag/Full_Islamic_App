@@ -68,7 +68,8 @@ class HomeViewBody extends StatelessWidget {
                   children: [
                     InkWell(
                       onTap: () {
-                        Navigator.pushNamed(context, AppRouter.prayerViewRoute);
+                        Navigator.pushNamed(
+                            context, AppRouter.prayerViewRoute);
                       },
                       child: Row(
                         crossAxisAlignment: CrossAxisAlignment.end,
@@ -81,7 +82,8 @@ class HomeViewBody extends StatelessWidget {
                           SizedBox(width: 3.w),
                           Text(
                             "المزيد",
-                            style: Styles.textStyle16.copyWith(fontSize: 14.sp),
+                            style:
+                                Styles.textStyle16.copyWith(fontSize: 14.sp),
                           ),
                         ],
                       ),
@@ -106,10 +108,11 @@ class HomeViewBody extends StatelessWidget {
                     if (state is PrayerSuccess) {
                       List<String> prayerlist = [
                         state.prayerModelList[dayDifference()].timings!.fajr!,
-                        state.prayerModelList[dayDifference()].timings!.dhuhr!,
-                        state.prayerModelList[dayDifference()].timings!.asr!,
                         state
-                            .prayerModelList[dayDifference()].timings!.maghrib!,
+                            .prayerModelList[dayDifference()].timings!.dhuhr!,
+                        state.prayerModelList[dayDifference()].timings!.asr!,
+                        state.prayerModelList[dayDifference()].timings!
+                            .maghrib!,
                         state.prayerModelList[dayDifference()].timings!.isha!,
                       ];
                       return ListView.builder(
@@ -142,7 +145,8 @@ class HomeViewBody extends StatelessWidget {
                     HomeItem(
                       text: "المسبحة\nالاكترونية",
                       onpressed: () {
-                        Navigator.pushNamed(context, AppRouter.sibhaViewRoute);
+                        Navigator.pushNamed(
+                            context, AppRouter.sibhaViewRoute);
                       },
                       icon: Image.asset(
                         "assets/images/tasbih.png",
