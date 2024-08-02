@@ -1,3 +1,4 @@
+import 'package:advanced_quran_app/Core/utils/constants.dart';
 import 'package:advanced_quran_app/Core/utils/routes.dart';
 import 'package:advanced_quran_app/Features/home/presentation/widgets/date_and_time_section.dart';
 import 'package:advanced_quran_app/Features/home/presentation/widgets/home_item.dart';
@@ -59,10 +60,10 @@ class HomeViewBody extends StatelessWidget {
                 height: 44,
                 indent: 105,
                 endIndent: 105,
-                color: Color.fromRGBO(255, 255, 255, 0.15),
+                color: kShadeWhite,
               ),
               Padding(
-                padding: EdgeInsets.only(left: 15.w, right: 15.w),
+                padding: const EdgeInsets.only(left: 15, right: 15),
                 child: Column(
                   children: [
                     IntrinsicHeight(
@@ -72,10 +73,7 @@ class HomeViewBody extends StatelessWidget {
                           Expanded(
                             child: HomeItem(
                               text: "المسبحة\nالاكترونية",
-                              onpressed: () {
-                                Navigator.pushNamed(
-                                    context, Routes.sibhaViewRoute);
-                              },
+                              destinationRoute: Routes.sibhaViewRoute,
                               icon: Image.asset(
                                 "assets/images/tasbih.png",
                                 width: 52.w,
@@ -86,10 +84,7 @@ class HomeViewBody extends StatelessWidget {
                           Expanded(
                             child: HomeItem(
                               text: "أذكار\nالمسلم",
-                              onpressed: () {
-                                Navigator.pushNamed(
-                                    context, Routes.azkarCategoryViewRoute);
-                              },
+                              destinationRoute: Routes.azkarCategoryViewRoute,
                               icon: Image.asset(
                                 "assets/images/pray.png",
                                 width: 42.w,
@@ -104,12 +99,7 @@ class HomeViewBody extends StatelessWidget {
                                 "assets/images/quran.png",
                                 width: 42.w,
                               ),
-                              onpressed: () {
-                                Navigator.pushNamed(
-                                  context,
-                                  Routes.quranCategoryViewRoute,
-                                );
-                              },
+                              destinationRoute: Routes.quranCategoryViewRoute,
                             ),
                           ),
                         ],
@@ -123,10 +113,7 @@ class HomeViewBody extends StatelessWidget {
                           Expanded(
                             child: HomeItem(
                               text: "اتجاة\nالقبلة",
-                              onpressed: () {
-                                Navigator.pushNamed(
-                                    context, Routes.compassViewRoute);
-                              },
+                              destinationRoute: Routes.compassViewRoute,
                               icon: Image.asset(
                                 "assets/images/qibla.png",
                                 width: 47.w,
@@ -137,10 +124,7 @@ class HomeViewBody extends StatelessWidget {
                           Expanded(
                             child: HomeItem(
                               text: "اسماء الله\nالحسني",
-                              onpressed: () {
-                                Navigator.pushNamed(
-                                    context, Routes.allahNamesViewRoute);
-                              },
+                              destinationRoute: Routes.allahNamesViewRoute,
                               icon: Image.asset(
                                 "assets/images/99(2).png",
                                 width: 46.w,
@@ -151,10 +135,7 @@ class HomeViewBody extends StatelessWidget {
                           Expanded(
                             child: HomeItem(
                               text: "منوعات\nاسلامية",
-                              onpressed: () {
-                                Navigator.pushNamed(
-                                    context, Routes.categoriesViewRoute);
-                              },
+                              destinationRoute: Routes.categoriesViewRoute,
                               icon: Image.asset(
                                 "assets/images/menu.png",
                                 width: 40.w,

@@ -58,65 +58,102 @@ class CategoriesViewBody extends StatelessWidget {
           padding: EdgeInsets.only(left: 15.w, right: 15.w, top: 70.h),
           child: Column(
             children: [
-              CategoriesViewItem(
-                text: "السيرة النبوية",
-                icon: Image.asset("assets/images/mohamed.png", width: 40),
-                onTap: () {
-                  Navigator.pushNamed(context, Routes.categoriesListViewRoute,
-                      arguments: {"text": "السيرة النبوية", "items": sira});
-                },
+              Row(
+                children: [
+                  Expanded(
+                    child: CategoriesViewItem(
+                      text: "السيرة النبوية",
+                      image:
+                          Image.asset("assets/images/mohamed.png", width: 65),
+                      onTap: () {
+                        Navigator.pushNamed(
+                            context, Routes.categoriesListViewRoute,
+                            arguments: {
+                              "text": "السيرة النبوية",
+                              "items": sira
+                            });
+                      },
+                    ),
+                  ),
+                  const SizedBox(
+                    width: 12,
+                  ),
+                  Expanded(
+                    child: CategoriesViewItem(
+                      text: "قصص أسلامية",
+                      image: Image.asset(
+                          "assets/images/crescent-moon_4354860.png",
+                          width: 65),
+                      onTap: () {
+                        Navigator.pushNamed(
+                            context, Routes.categoriesListViewRoute,
+                            arguments: {
+                              "text": "قصص أسلامية",
+                              "items": islamStories
+                            });
+                      },
+                    ),
+                  ),
+                ],
               ),
-              SizedBox(height: 12.h),
-              CategoriesViewItem(
-                text: "قصص أسلامية",
-                icon: Image.asset("assets/images/crescent-moon_4354860.png",
-                    width: 40),
-                onTap: () {
-                  Navigator.pushNamed(context, Routes.categoriesListViewRoute,
-                      arguments: {
-                        "text": "قصص أسلامية",
-                        "items": islamStories
-                      });
-                },
+              const SizedBox(height: 12),
+              Row(
+                children: [
+                  Expanded(
+                    child: CategoriesViewItem(
+                      text: "الحج و العمرة",
+                      image: Image.asset("assets/images/haj.png", width: 65),
+                      onTap: () {
+                        Navigator.pushNamed(
+                            context, Routes.categoriesListViewRoute,
+                            arguments: {"text": "الحج و العمرة", "items": haj});
+                      },
+                    ),
+                  ),
+                  const SizedBox(width: 12),
+                  Expanded(
+                    child: CategoriesViewItem(
+                      text: "أسلاميات",
+                      image: Image.asset("assets/images/hand_4355994.png",
+                          width: 65),
+                      onTap: () {
+                        Navigator.pushNamed(
+                            context, Routes.categoriesListViewRoute,
+                            arguments: {"text": "أسلاميات", "items": islamyat});
+                      },
+                    ),
+                  ),
+                ],
               ),
-              SizedBox(height: 12.h),
-              CategoriesViewItem(
-                text: "الحج و العمرة",
-                icon: Image.asset("assets/images/haj.png", width: 40),
-                onTap: () {
-                  Navigator.pushNamed(context, Routes.categoriesListViewRoute,
-                      arguments: {"text": "الحج و العمرة", "items": haj});
-                },
-              ),
-              SizedBox(height: 12.h),
-              CategoriesViewItem(
-                text: "أسلاميات",
-                icon:
-                    Image.asset("assets/images/hand_4355994.png", width: 38),
-                onTap: () {
-                  Navigator.pushNamed(context, Routes.categoriesListViewRoute,
-                      arguments: {"text": "أسلاميات", "items": islamyat});
-                },
-              ),
-              SizedBox(height: 12.h),
-              CategoriesViewItem(
-                text: "أدعية",
-                icon: Image.asset("assets/images/hands.png", width: 40),
-                onTap: () {
-                  Navigator.pushNamed(context, Routes.categoriesListViewRoute,
-                      arguments: {"text": "أدعية", "items": doaa});
-                },
-              ),
-              SizedBox(height: 12.h),
-              CategoriesViewItem(
-                text: "أحاديث",
-                icon: Image.asset("assets/images/pattern.png", width: 40),
-                onTap: () {
-                  Navigator.pushNamed(context, Routes.categoriesListViewRoute,
-                      arguments: {"text": "أحاديث", "items": ahadith});
-                },
-              ),
-              SizedBox(height: 12.h),
+              const SizedBox(height: 12),
+              Row(
+                children: [
+                  Expanded(
+                    child: CategoriesViewItem(
+                      text: "أدعية",
+                      image: Image.asset("assets/images/hands.png", width: 65),
+                      onTap: () {
+                        Navigator.pushNamed(
+                            context, Routes.categoriesListViewRoute,
+                            arguments: {"text": "أدعية", "items": doaa});
+                      },
+                    ),
+                  ),
+                  const SizedBox(width: 12),
+                  Expanded(
+                    child: CategoriesViewItem(
+                      text: "أحاديث",
+                      image:
+                          Image.asset("assets/images/pattern.png", width: 65),
+                      onTap: () {
+                        Navigator.pushNamed(
+                            context, Routes.categoriesListViewRoute,
+                            arguments: {"text": "أحاديث", "items": ahadith});
+                      },
+                    ),
+                  ),
+                ],
+              )
             ],
           ),
         ),

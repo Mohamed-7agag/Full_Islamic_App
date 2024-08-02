@@ -1,3 +1,4 @@
+import 'package:advanced_quran_app/Core/utils/constants.dart';
 import 'package:advanced_quran_app/Core/utils/custom_url_launcher.dart';
 import 'package:advanced_quran_app/Core/utils/styles.dart';
 import 'package:advanced_quran_app/Features/home/presentation/widgets/drawer_item.dart';
@@ -22,7 +23,7 @@ class CustomDrawer extends StatelessWidget {
           fit: BoxFit.fitHeight,
         ),
         Padding(
-          padding: EdgeInsets.symmetric(vertical: 40.h, horizontal: 18.w),
+          padding: EdgeInsets.symmetric(vertical: 40.h, horizontal: 20.w),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
@@ -38,7 +39,12 @@ class CustomDrawer extends StatelessWidget {
                     "الرفيق ... تطبيق كل مسلم",
                     style: Styles.textStyle18,
                   ),
-                  SizedBox(height: 45.h),
+                  const Divider(
+                    height: 60,
+                    indent: 50,
+                    endIndent: 50,
+                    color: kShadeWhite,
+                  ),
                   const DrawerItem(
                       text: "تقييم البرنامج", path: "assets/images/rate.png"),
                   SizedBox(height: 30.h),
@@ -62,7 +68,7 @@ class CustomDrawer extends StatelessWidget {
                   SizedBox(height: 30.h),
                   InkWell(
                     onTap: () {
-                      customUrlLauncher(context, "https://wa.me/01203435611");
+                      customUrlLauncher(context, "https://wa.me/201203435611");
                     },
                     child: const DrawerItem(
                         text: "تواصل معنا", path: "assets/images/contact.png"),

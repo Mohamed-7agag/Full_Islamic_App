@@ -58,7 +58,11 @@ class AzkarDetailsViewBody extends StatelessWidget {
                           itemCount: state.azkar.length,
                           itemBuilder: (BuildContext context, int index) {
                             return Padding(
-                              padding: EdgeInsets.only(top: 15.h),
+                              padding: EdgeInsets.only(
+                                top: 15.h,
+                                bottom:
+                                    index == state.azkar.length - 1 ? 15 : 0,
+                              ),
                               child: AzkarDetailsListViewItem(
                                 index: index,
                                 length: state.azkar.length,

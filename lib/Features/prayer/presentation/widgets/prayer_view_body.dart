@@ -59,8 +59,6 @@ class PrayerViewBody extends StatelessWidget {
                   formatTime(
                       state.prayerModelList[dayDifference()].timings!.asr!),
                   formatTime(
-                      state.prayerModelList[dayDifference()].timings!.sunset!),
-                  formatTime(
                       state.prayerModelList[dayDifference()].timings!.maghrib!),
                   formatTime(
                       state.prayerModelList[dayDifference()].timings!.isha!),

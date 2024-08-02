@@ -9,7 +9,7 @@ class HomeView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       drawer: Drawer(
-        width: MediaQuery.of(context).size.width / 1.4,
+        width: MediaQuery.of(context).size.width * 0.7,
         child: const CustomDrawer(),
       ),
       body: const SafeArea(child: HomeViewBody()),

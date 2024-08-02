@@ -1,6 +1,6 @@
 import 'package:advanced_quran_app/Core/utils/routes.dart';
 import 'package:advanced_quran_app/Core/utils/styles.dart';
-import 'package:advanced_quran_app/Features/categories/presentation/widgets/categories_view_item.dart';
+import 'package:advanced_quran_app/Features/categories/presentation/widgets/category_item_list_item.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -48,7 +48,7 @@ class CategoriesListViewBody extends StatelessWidget {
             itemBuilder: (BuildContext context, int index) {
               return Padding(
                 padding: EdgeInsets.only(top: 6.h, bottom: 6.h),
-                child: CategoriesViewItem(
+                child: CategoryItemListItem(
                   text: category[index][0],
                   onTap: () {
                     Navigator.pushNamed(

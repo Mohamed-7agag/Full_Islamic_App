@@ -3,20 +3,25 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class HomeItem extends StatelessWidget {
-  const HomeItem(
-      {super.key, required this.text, this.onpressed, required this.icon});
+  const HomeItem({
+    super.key,
+    required this.text,
+    required this.icon,
+    required this.destinationRoute,
+  });
   final String text;
-  final VoidCallback? onpressed;
+  final String destinationRoute;
   final Widget icon;
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: onpressed,
+      onTap: () {
+        Navigator.pushNamed(context, destinationRoute);
+      },
       child: Container(
         alignment: Alignment.center,
-        padding: const EdgeInsets.symmetric(vertical: 6,horizontal: 16),
-        
+        padding: const EdgeInsets.symmetric(vertical: 6, horizontal: 16),
         decoration: BoxDecoration(
           color: const Color.fromRGBO(255, 255, 255, 0.11),
           borderRadius: BorderRadius.circular(16.r),

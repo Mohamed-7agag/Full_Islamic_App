@@ -5,39 +5,34 @@ import '../../../../Core/utils/styles.dart';
 
 class CategoriesViewItem extends StatelessWidget {
   const CategoriesViewItem(
-      {super.key, required this.text, this.onTap, this.icon});
+      {super.key, required this.text, this.onTap, this.image});
   final String text;
   final VoidCallback? onTap;
-  final Widget? icon;
+  final Widget? image;
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: onTap,
-      child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 15),
-        width: double.infinity,
-        decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(16.r), color: kShadeWhite),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            icon ??
-                const Icon(
-                  Icons.arrow_back_ios_new_rounded,
-                  color: Colors.white,
-                ),
-            Expanded(
-              child: Text(
+      child: AspectRatio(
+        aspectRatio: 1,
+        child: Container(
+          alignment: Alignment.center,
+          decoration: BoxDecoration(
+            color: kShadeWhite,
+            borderRadius: BorderRadius.circular(16.r),
+          ),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              image ?? const SizedBox.shrink(),
+              const SizedBox(height: 12),
+              Text(
                 text,
-                textAlign: TextAlign.right,
-                textDirection: TextDirection.rtl,
-                maxLines: 1,
-                overflow: TextOverflow.clip,
                 style: Styles.textStyle20,
-              ),
-            ),
-          ],
+              )
+            ],
+          ),
         ),
       ),
     );
