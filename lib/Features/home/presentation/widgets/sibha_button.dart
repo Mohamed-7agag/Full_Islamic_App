@@ -10,10 +10,10 @@ class SibhaButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return IconButton(
       style: const ButtonStyle(
-        backgroundColor: MaterialStatePropertyAll(
+        backgroundColor: WidgetStatePropertyAll(
           kShadeWhite,
         ),
-        padding: MaterialStatePropertyAll(EdgeInsets.all(14)),
+        padding: WidgetStatePropertyAll(EdgeInsets.all(14)),
       ),
       onPressed: onPressed,
       icon: icon,

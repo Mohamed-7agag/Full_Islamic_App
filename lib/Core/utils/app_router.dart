@@ -1,3 +1,4 @@
+import 'package:advanced_quran_app/Core/utils/routes.dart';
 import 'package:advanced_quran_app/Core/utils/service_locator.dart';
 import 'package:advanced_quran_app/Core/view_models/azkar_counter_cubit.dart';
 import 'package:advanced_quran_app/Core/view_models/azkar_cubit/azkar_cubit.dart';
@@ -38,36 +39,16 @@ import '../../Features/quran/presentation/view_model/quran_cubit/quran_cubit.dar
 import '../../Features/quran/presentation/view_model/quran_details_cubit.dart';
 
 class AppRouter {
-  //! Routes Names
-  static const String splashViewRoute = "/";
-  static const String homeViewRoute = "/homeView";
-  static const String azkarDetailsRoute = "/azkarDetailsView";
-  static const String azkarCategoryViewRoute = "/azkarCategoryView";
-  static const String prayerViewRoute = "/prayerView";
-  static const String quranCategoryViewRoute = "/quranCategoryView";
-  static const String sibhaViewRoute = "/sibhaView";
-  static const String allahNamesViewRoute = "/allahNamesView";
-  static const String compassViewRoute = "/compassView";
-  static const String quranViewRoute = "/quranView";
-  static const String quranAudioViewRoute = "/quranAudioView";
-  static const String categoriesViewRoute = "/categoriesView";
-  static const String categoriesListViewRoute = "/categoriesListView";
-  static const String categoryItemsViewRoute = "/categoryItemsView";
-  static const String textViewRoute = "/textView";
-  static const String audioViewRoute = "/audioView";
-  static const String favouriteViewRoute = "/favouriteView";
-  static const String favouriteSurahViewRoute = "/favouriteSurahView";
-  static const String locationViewRoute = "/locationViewRoute";
   //! Generate Routes
   static Route<dynamic> generateRoute(RouteSettings settings) {
     switch (settings.name) {
       //! splashViewRoute
-      case splashViewRoute:
+      case Routes.splashViewRoute:
         return MaterialPageRoute(
           builder: (context) => const SplashView(),
         );
       //! homeViewRoute
-      case homeViewRoute:
+      case Routes.homeViewRoute:
         return MaterialPageRoute(
           builder: (context) => MultiBlocProvider(
             providers: [
@@ -86,12 +67,12 @@ class AppRouter {
           ),
         );
       // //! locationViewRoute
-      case locationViewRoute:
+      case Routes.locationViewRoute:
         return MaterialPageRoute(
           builder: (context) => const LocationView(),
         );
       //! categoriesListViewRoute
-      case categoriesListViewRoute:
+      case Routes.categoriesListViewRoute:
         var args = settings.arguments as Map<String, dynamic>;
         return MaterialPageRoute(
           builder: (context) => CategoriesListView(
@@ -100,7 +81,7 @@ class AppRouter {
           ),
         );
       //! categoryItemsViewRoute
-      case categoryItemsViewRoute:
+      case Routes.categoryItemsViewRoute:
         var args = settings.arguments as Map<String, dynamic>;
         return MaterialPageRoute(
           builder: (context) => BlocProvider(
@@ -109,12 +90,12 @@ class AppRouter {
           ),
         );
       //! azkarCategoryViewRoute
-      case azkarCategoryViewRoute:
+      case Routes.azkarCategoryViewRoute:
         return MaterialPageRoute(
           builder: (context) => const AzkarCategoryView(),
         );
       //! quranViewRoute
-      case quranViewRoute:
+      case Routes.quranViewRoute:
         var args = settings.arguments as int;
         int index = juz.indexWhere((element) => element[1] > args);
         return MaterialPageRoute(
@@ -137,7 +118,7 @@ class AppRouter {
           ),
         );
       //! sibhaViewRoute
-      case sibhaViewRoute:
+      case Routes.sibhaViewRoute:
         return MaterialPageRoute(
           builder: (context) => MultiBlocProvider(
             providers: [
@@ -152,7 +133,7 @@ class AppRouter {
           ),
         );
       //! allahNamesViewRoute
-      case allahNamesViewRoute:
+      case Routes.allahNamesViewRoute:
         return MaterialPageRoute(
           builder: (context) => BlocProvider(
             create: (context) => AllahNamesCubit()..getData(),
@@ -160,17 +141,17 @@ class AppRouter {
           ),
         );
       //! favouriteSurahViewRoute
-      case favouriteSurahViewRoute:
+      case Routes.favouriteSurahViewRoute:
         return MaterialPageRoute(
           builder: (context) => const FavouriteSurahView(),
         );
       //! favouriteViewRoute
-      case favouriteViewRoute:
+      case Routes.favouriteViewRoute:
         return MaterialPageRoute(
           builder: (context) => const FavouriteView(),
         );
       //! quranAudioViewRoute
-      case quranAudioViewRoute:
+      case Routes.quranAudioViewRoute:
         var args = settings.arguments as QuranAudioModel;
         return MaterialPageRoute(
           builder: (context) => MultiBlocProvider(
@@ -188,7 +169,7 @@ class AppRouter {
           ),
         );
       //! audioViewRoute
-      case audioViewRoute:
+      case Routes.audioViewRoute:
         var args = settings.arguments as Map<String, dynamic>;
         return MaterialPageRoute(
           builder: (context) => MultiBlocProvider(
@@ -206,7 +187,7 @@ class AppRouter {
           ),
         );
       //! compassViewRoute
-      case compassViewRoute:
+      case Routes.compassViewRoute:
         return MaterialPageRoute(
           builder: (context) => BlocProvider(
             create: (context) => CompassCubit(),
@@ -214,18 +195,18 @@ class AppRouter {
           ),
         );
       //! categoriesViewRoute
-      case categoriesViewRoute:
+      case Routes.categoriesViewRoute:
         return MaterialPageRoute(
           builder: (context) => const CategoriesView(),
         );
       //! textViewRoute
-      case textViewRoute:
+      case Routes.textViewRoute:
         var args = settings.arguments as CategoriesModel1;
         return MaterialPageRoute(
           builder: (context) => TextView(categoriesModel1: args),
         );
       //! quranCategoryViewRoute
-      case quranCategoryViewRoute:
+      case Routes.quranCategoryViewRoute:
         return MaterialPageRoute(
           builder: (context) => MultiBlocProvider(
             providers: [
@@ -240,7 +221,7 @@ class AppRouter {
           ),
         );
       //! prayerViewRoute
-      case prayerViewRoute:
+      case Routes.prayerViewRoute:
         return MaterialPageRoute(
           builder: (context) => BlocProvider(
             create: (context) => PrayerCubit(getIt.get<PrayerRepoImplement>())
@@ -249,7 +230,7 @@ class AppRouter {
           ),
         );
       //! azkarDetailsRoute
-      case azkarDetailsRoute:
+      case Routes.azkarDetailsRoute:
         var args = settings.arguments as Map<String, dynamic>;
         return MaterialPageRoute(
           builder: (context) => MultiBlocProvider(

@@ -16,9 +16,8 @@ class PrayerItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(horizontal: 15.w),
+      padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 15),
       width: double.infinity,
-      height: 64.h,
       decoration: BoxDecoration(
           color: kShadeWhite, borderRadius: BorderRadius.circular(15.r)),
       child: Row(

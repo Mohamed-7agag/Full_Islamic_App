@@ -12,12 +12,11 @@ class CategoriesViewItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return InkWell(
+    return GestureDetector(
       onTap: onTap,
       child: Container(
-        padding: EdgeInsets.symmetric(horizontal: 15.w),
+        padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 15),
         width: double.infinity,
-        height: 68.h,
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(16.r), color: kShadeWhite),
         child: Row(

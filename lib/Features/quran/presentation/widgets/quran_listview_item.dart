@@ -1,5 +1,5 @@
-import 'package:advanced_quran_app/Core/utils/app_router.dart';
 import 'package:advanced_quran_app/Core/utils/constants.dart';
+import 'package:advanced_quran_app/Core/utils/routes.dart';
 import 'package:advanced_quran_app/Core/utils/styles.dart';
 import 'package:advanced_quran_app/Features/quran/data/local_data.dart';
 import 'package:advanced_quran_app/Features/quran/data/models/quran_model/quran_model.dart';
@@ -15,7 +15,7 @@ class QuranListViewItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-        Navigator.pushNamed(context, AppRouter.quranViewRoute,
+        Navigator.pushNamed(context, Routes.quranViewRoute,
             arguments: posOfSurah[quranModel.id! - 1]);
       },
       child: Container(

@@ -1,5 +1,5 @@
-import 'package:advanced_quran_app/Core/utils/app_router.dart';
 import 'package:advanced_quran_app/Core/utils/constants.dart';
+import 'package:advanced_quran_app/Core/utils/routes.dart';
 import 'package:advanced_quran_app/Core/utils/styles.dart';
 import 'package:advanced_quran_app/Features/quran/presentation/view_model/favourite_surah_cubit.dart';
 import 'package:flutter/material.dart';
@@ -14,7 +14,7 @@ class FavouriteSurahItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-        Navigator.pushNamed(context, AppRouter.audioViewRoute,
+        Navigator.pushNamed(context, Routes.audioViewRoute,
             arguments: object);
       },
       child: Container(

@@ -1,4 +1,4 @@
-import 'package:advanced_quran_app/Core/utils/app_router.dart';
+import 'package:advanced_quran_app/Core/utils/routes.dart';
 import 'package:advanced_quran_app/cache/cache_helper.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -17,9 +17,9 @@ class _SplashViewBodyState extends State<SplashViewBody> {
     super.initState();
     Future.delayed(const Duration(milliseconds: 1600), () {
       CacheHelper.getData(key: 'location') == 'done'
-          ? Navigator.pushReplacementNamed(context, AppRouter.homeViewRoute)
+          ? Navigator.pushReplacementNamed(context, Routes.homeViewRoute)
           : Navigator.pushReplacementNamed(
-              context, AppRouter.locationViewRoute);
+              context, Routes.locationViewRoute);
     });
   }
 

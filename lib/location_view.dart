@@ -1,11 +1,10 @@
-// ignore_for_file: avoid_print, use_build_context_synchronously
+import 'dart:developer';
 
-import 'package:advanced_quran_app/Core/utils/app_router.dart';
 import 'package:advanced_quran_app/Core/utils/location.dart';
+import 'package:advanced_quran_app/Core/utils/routes.dart';
 import 'package:advanced_quran_app/Core/utils/styles.dart';
 import 'package:advanced_quran_app/cache/cache_helper.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -31,7 +30,7 @@ class _LocationViewState extends State<LocationView> {
       CacheHelper.setData(key: 'lat', value: position.latitude.toString());
       CacheHelper.setData(key: 'long', value: position.longitude.toString());
     } catch (e) {
-      print("Error: $e");
+      log("Error: $e");
     }
   }
 
@@ -100,8 +99,10 @@ class _LocationViewState extends State<LocationView> {
                       ElevatedButton(
                         onPressed: () async {
                           if (await CacheHelper.containsKey(key: 'lat')) {
-                            Navigator.pushNamed(
-                                context, AppRouter.homeViewRoute);
+                            if (context.mounted) {
+                              Navigator.pushNamed(
+                                  context, Routes.homeViewRoute);
+                            }
                           }
                         },
                         style: ElevatedButton.styleFrom(

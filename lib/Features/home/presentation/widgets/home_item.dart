@@ -13,28 +13,26 @@ class HomeItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: onpressed,
-      child: Stack(
+      child: Container(
         alignment: Alignment.center,
-        children: [
-          Container(
-            width: MediaQuery.of(context).size.width / 3.45,
-            height: 160,
-            decoration: BoxDecoration(
-                color: const Color.fromRGBO(255, 255, 255, 0.11),
-                borderRadius: BorderRadius.circular(16.r)),
-          ),
-          Column(
-            children: [
-              icon,
-              SizedBox(height: 11.h),
-              Text(
-                textAlign: TextAlign.center,
-                text,
-                style: Styles.textStyle18,
-              ),
-            ],
-          ),
-        ],
+        padding: const EdgeInsets.symmetric(vertical: 6,horizontal: 16),
+        
+        decoration: BoxDecoration(
+          color: const Color.fromRGBO(255, 255, 255, 0.11),
+          borderRadius: BorderRadius.circular(16.r),
+        ),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            icon,
+            const SizedBox(height: 15),
+            Text(
+              textAlign: TextAlign.center,
+              text,
+              style: Styles.textStyle18,
+            ),
+          ],
+        ),
       ),
     );
   }

@@ -1,4 +1,4 @@
-import 'package:advanced_quran_app/Core/utils/app_router.dart';
+import 'package:advanced_quran_app/Core/utils/routes.dart';
 import 'package:advanced_quran_app/Core/utils/styles.dart';
 import 'package:advanced_quran_app/Features/azkar_details/presentation/widgets/azkar_category_item.dart';
 import 'package:flutter/material.dart';
@@ -48,7 +48,7 @@ class AzkarCategoryViewBody extends StatelessWidget {
                   text: "أذكار الصباح",
                   imagePath: "assets/images/sun.png",
                   onTap: () {
-                    Navigator.pushNamed(context, AppRouter.azkarDetailsRoute,
+                    Navigator.pushNamed(context, Routes.azkarDetailsRoute,
                         arguments: {
                           "text": "أذكار الصباح",
                           "path": "assets/json/azkar_sabah.json"
@@ -60,7 +60,7 @@ class AzkarCategoryViewBody extends StatelessWidget {
                   text: "أذكار المساء",
                   imagePath: "assets/images/moon.png",
                   onTap: () {
-                    Navigator.pushNamed(context, AppRouter.azkarDetailsRoute,
+                    Navigator.pushNamed(context, Routes.azkarDetailsRoute,
                         arguments: {
                           "text": "أذكار المساء",
                           "path": "assets/json/azkar_masaa.json"
@@ -72,7 +72,7 @@ class AzkarCategoryViewBody extends StatelessWidget {
                   text: "أذكار الصلاة",
                   imagePath: "assets/images/salah.png",
                   onTap: () {
-                    Navigator.pushNamed(context, AppRouter.azkarDetailsRoute,
+                    Navigator.pushNamed(context, Routes.azkarDetailsRoute,
                         arguments: {
                           "text": "أذكار الصلاة",
                           "path": "assets/json/after_salah.json"
@@ -84,7 +84,7 @@ class AzkarCategoryViewBody extends StatelessWidget {
                   text: "أذكار النوم",
                   imagePath: "assets/images/noom.png",
                   onTap: () {
-                    Navigator.pushNamed(context, AppRouter.azkarDetailsRoute,
+                    Navigator.pushNamed(context, Routes.azkarDetailsRoute,
                         arguments: {
                           "text": "أذكار النوم",
                           "path": "assets/json/azkar_noom.json"
@@ -96,7 +96,7 @@ class AzkarCategoryViewBody extends StatelessWidget {
                   text: "أذكار الاستيقاظ",
                   imagePath: "assets/images/sunn.png",
                   onTap: () {
-                    Navigator.pushNamed(context, AppRouter.azkarDetailsRoute,
+                    Navigator.pushNamed(context, Routes.azkarDetailsRoute,
                         arguments: {
                           "text": "أذكار الاستيقاظ",
                           "path": "assets/json/azkar_astikaz.json"
@@ -108,7 +108,7 @@ class AzkarCategoryViewBody extends StatelessWidget {
                   text: "أذكار مختارة",
                   imagePath: "assets/images/star.png",
                   onTap: () {
-                    Navigator.pushNamed(context, AppRouter.azkarDetailsRoute,
+                    Navigator.pushNamed(context, Routes.azkarDetailsRoute,
                         arguments: {
                           "text": "أذكار مختارة",
                           "path": "assets/json/other_azkar.json"
@@ -120,7 +120,7 @@ class AzkarCategoryViewBody extends StatelessWidget {
                   text: "تسابيح",
                   imagePath: "assets/images/prayer-rug.png",
                   onTap: () {
-                    Navigator.pushNamed(context, AppRouter.azkarDetailsRoute,
+                    Navigator.pushNamed(context, Routes.azkarDetailsRoute,
                         arguments: {
                           "text": "تسابيح",
                           "path": "assets/json/tsabeeh.json"

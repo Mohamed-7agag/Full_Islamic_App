@@ -6,6 +6,10 @@ abstract class Styles {
     fontSize: 16.sp,
     color: Colors.white,
   );
+  static TextStyle textStyle14 = TextStyle(
+    fontSize: 14.sp,
+    color: Colors.white,
+  );
   static TextStyle textStyle18 = TextStyle(
     fontSize: 18.sp,
     color: Colors.white,

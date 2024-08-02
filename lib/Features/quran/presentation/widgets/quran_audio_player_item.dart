@@ -1,4 +1,4 @@
-import 'package:advanced_quran_app/Core/utils/app_router.dart';
+import 'package:advanced_quran_app/Core/utils/routes.dart';
 import 'package:advanced_quran_app/Core/utils/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -22,7 +22,7 @@ class QuranAudioPlayerItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-        Navigator.pushNamed(context, AppRouter.audioViewRoute, arguments: {
+        Navigator.pushNamed(context, Routes.audioViewRoute, arguments: {
           "url": url,
           "surahName": surahName,
           "personName": personName,

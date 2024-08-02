@@ -13,7 +13,6 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 class PrayerViewBody extends StatelessWidget {
   const PrayerViewBody({super.key});
 
-
   @override
   Widget build(BuildContext context) {
     return Stack(
@@ -56,11 +55,11 @@ class PrayerViewBody extends StatelessWidget {
                   formatTime(
                       state.prayerModelList[dayDifference()].timings!.sunrise!),
                   formatTime(
+                      state.prayerModelList[dayDifference()].timings!.dhuhr!),
+                  formatTime(
                       state.prayerModelList[dayDifference()].timings!.asr!),
                   formatTime(
                       state.prayerModelList[dayDifference()].timings!.sunset!),
-                  formatTime(
-                      state.prayerModelList[dayDifference()].timings!.dhuhr!),
                   formatTime(
                       state.prayerModelList[dayDifference()].timings!.maghrib!),
                   formatTime(
@@ -83,13 +82,18 @@ class PrayerViewBody extends StatelessWidget {
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            Text(state.prayerModelList[dayDifference()].date!.hijri!.date!,style: Styles.textStyle16,),
+                            Text(
+                              state.prayerModelList[dayDifference()].date!
+                                  .hijri!.date!,
+                              style: Styles.textStyle16,
+                            ),
                             Row(
                               mainAxisAlignment: MainAxisAlignment.end,
                               children: [
                                 Text(
-                                    "${state.prayerModelList[dayDifference()].date!.hijri!.weekday!.ar!} , ${state.prayerModelList[dayDifference()].date!.hijri!.day} ${state.prayerModelList[dayDifference()].date!.hijri!.month!.ar}",
-                                    style: Styles.textStyle16),
+                                  "${state.prayerModelList[dayDifference()].date!.hijri!.weekday!.ar!} , ${state.prayerModelList[dayDifference()].date!.hijri!.day} ${state.prayerModelList[dayDifference()].date!.hijri!.month!.ar}",
+                                  style: Styles.textStyle16,
+                                ),
                                 SizedBox(width: 7.w),
                                 Image.asset(
                                   "assets/images/calendar.png",
@@ -100,19 +104,21 @@ class PrayerViewBody extends StatelessWidget {
                           ],
                         ),
                       ),
-                      SizedBox(height: 8.h),
+                      SizedBox(height: 10.h),
                       ListView.builder(
                         itemCount: list.length,
                         physics: const NeverScrollableScrollPhysics(),
                         shrinkWrap: true,
                         itemBuilder: (BuildContext context, int index) {
-                          return Padding(
-                            padding: EdgeInsets.only(top: 6.h, bottom: 6),
-                            child: PrayerItem(
-                              imagePath: allPrayerImagePath[index],
-                              text: allPrayerTiming[index],
-                              time: list[index],
-                            ),
+                          return Column(
+                            children: [
+                              PrayerItem(
+                                imagePath: allPrayerImagePath[index],
+                                text: allPrayerTiming[index],
+                                time: list[index],
+                              ),
+                              const SizedBox(height: 12),
+                            ],
                           );
                         },
                       ),

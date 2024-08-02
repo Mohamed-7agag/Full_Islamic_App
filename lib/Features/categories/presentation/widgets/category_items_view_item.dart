@@ -1,5 +1,5 @@
-import 'package:advanced_quran_app/Core/utils/app_router.dart';
 import 'package:advanced_quran_app/Core/utils/constants.dart';
+import 'package:advanced_quran_app/Core/utils/routes.dart';
 import 'package:advanced_quran_app/Core/utils/styles.dart';
 import 'package:advanced_quran_app/Features/categories/data/models/categories_model1.dart';
 import 'package:flutter/material.dart';
@@ -13,7 +13,7 @@ class CategoryItemsViewItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-        Navigator.pushNamed(context, AppRouter.textViewRoute,
+        Navigator.pushNamed(context, Routes.textViewRoute,
             arguments: categoriesModel1);
       },
       child: Container(

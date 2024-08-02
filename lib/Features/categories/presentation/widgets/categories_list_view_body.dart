@@ -1,4 +1,4 @@
-import 'package:advanced_quran_app/Core/utils/app_router.dart';
+import 'package:advanced_quran_app/Core/utils/routes.dart';
 import 'package:advanced_quran_app/Core/utils/styles.dart';
 import 'package:advanced_quran_app/Features/categories/presentation/widgets/categories_view_item.dart';
 import 'package:flutter/material.dart';
@@ -52,7 +52,7 @@ class CategoriesListViewBody extends StatelessWidget {
                   text: category[index][0],
                   onTap: () {
                     Navigator.pushNamed(
-                        context, AppRouter.categoryItemsViewRoute,
+                        context, Routes.categoryItemsViewRoute,
                         arguments: {
                           "text": category[index][0],
                           "path": category[index][1],

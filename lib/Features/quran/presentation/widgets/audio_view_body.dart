@@ -169,10 +169,10 @@ class AudoViewBody extends StatelessWidget {
                                 color: Colors.white,
                               ),
                               style: const ButtonStyle(
-                                backgroundColor: MaterialStatePropertyAll(
+                                backgroundColor: WidgetStatePropertyAll(
                                   kShadeWhite,
                                 ),
-                                padding: MaterialStatePropertyAll(
+                                padding: WidgetStatePropertyAll(
                                     EdgeInsets.all(10)),
                               ),
                             ),

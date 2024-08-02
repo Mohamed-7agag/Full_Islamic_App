@@ -1,4 +1,4 @@
-import 'package:advanced_quran_app/Core/utils/app_router.dart';
+import 'package:advanced_quran_app/Core/utils/routes.dart';
 import 'package:advanced_quran_app/Core/utils/styles.dart';
 import 'package:advanced_quran_app/Features/quran/data/models/quran_audio_model/quran_audio_model.dart';
 import 'package:flutter/material.dart';
@@ -13,7 +13,7 @@ class QuranAudioItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-        Navigator.pushNamed(context, AppRouter.quranAudioViewRoute,
+        Navigator.pushNamed(context, Routes.quranAudioViewRoute,
             arguments: quranAudioModel);
       },
       child: Container(
