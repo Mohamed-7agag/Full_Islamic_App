@@ -10,9 +10,17 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-void main() {
+import 'Core/notification/notification_service.dart';
+import 'Core/notification/work_manager_service.dart';
+
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  CacheHelper.init();
+  await Future.wait([
+    CacheHelper.init(),
+    LocalNotificationServices.initialize(),
+    //WorkManagerServices.init(),
+  ]);
+  
   setUp();
   runApp(MultiBlocProvider(
     providers: [

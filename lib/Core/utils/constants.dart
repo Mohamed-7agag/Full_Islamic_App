@@ -9,3 +9,11 @@ const String favouriteSurahKey = "favouriteSurahKey";
 
 String lat = '';
 String lang = '';
+
+List<List<String>> prayerTitleAndBodyList = [
+  ['صلاة الفجر', 'حان الأن موعد صلاة الفجر'],
+  ['صلاة الظهر', 'حان الأن موعد صلاة الظهر'],
+  ['صلاة العصر', 'حان الأن موعد صلاة العصر'],
+  ['صلاة المغرب', 'حان الأن موعد صلاة المغرب'],
+  ['صلاة العشاء', 'حان الأن موعد صلاة العشاء'],
+];

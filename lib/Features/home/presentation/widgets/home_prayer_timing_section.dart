@@ -1,3 +1,5 @@
+import 'package:advanced_quran_app/Core/notification/notification_service.dart';
+import 'package:advanced_quran_app/Core/notification/work_manager_service.dart';
 import 'package:advanced_quran_app/Core/utils/custom_error_widget.dart';
 import 'package:advanced_quran_app/Core/utils/custom_loading_widget.dart';
 import 'package:advanced_quran_app/Core/utils/days_difference_function.dart';
@@ -64,6 +66,10 @@ class HomePrayerTimingSection extends StatelessWidget {
                 state.prayerModelList[dayDifference()].timings!.maghrib!,
                 state.prayerModelList[dayDifference()].timings!.isha!,
               ];
+
+              LocalNotificationServices.prayerList = prayerlist;
+              print("prayerList: ${LocalNotificationServices.prayerList}");
+              WorkManagerServices.init();
               return SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 child: Row(
