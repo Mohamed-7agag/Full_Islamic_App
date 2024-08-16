@@ -58,7 +58,7 @@ class HomePrayerTimingSection extends StatelessWidget {
         SizedBox(height: 15.h),
         BlocBuilder<PrayerCubit, PrayerState>(
           builder: (context, state) {
-            if (state is PrayerSuccess) {
+            if (state is PrayerSuccess)  {
               List<String> prayerlist = [
                 state.prayerModelList[dayDifference()].timings!.fajr!,
                 state.prayerModelList[dayDifference()].timings!.dhuhr!,
@@ -68,7 +68,7 @@ class HomePrayerTimingSection extends StatelessWidget {
               ];
 
               LocalNotificationServices.prayerList = prayerlist;
-              print("prayerList: ${LocalNotificationServices.prayerList}");
+              print("Prayer list populated: $prayerlist");
               WorkManagerServices.init();
               return SingleChildScrollView(
                 scrollDirection: Axis.horizontal,

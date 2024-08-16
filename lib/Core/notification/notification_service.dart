@@ -96,32 +96,22 @@ class LocalNotificationServices {
     );
   }
 
-  /// Function to display a Daily Scheduled Local Notification
+  /// Function to handle the daily prayer timing
   static Future<void> schedulePrayerTimes() async {
-      print('------------prayerList : $prayerList');
+    print('------------prayerList : $prayerList');
     for (int i = 0; i < prayerList.length; i++) {
-
       List<String> parts = prayerList[i].split(':');
       int hour = int.parse(parts[0]);
       int minute = int.parse(parts[1].substring(0, 2));
 
       await showDailyScheduledLocalNotification(
-       prayerTitleAndBodyList[i][0],
-       prayerTitleAndBodyList[i][1],
-        hour,minute,
+        prayerTitleAndBodyList[i][0],
+        prayerTitleAndBodyList[i][1],
+        hour,
+        minute,
         {},
       );
     }
-  }
-
-//! Function to Cancel a Local Notification
-  static Future<void> notificationCancel(int notificationId) async {
-    await flutterLocalNotificationsPlugin.cancel(notificationId);
-  }
-
-//! Function to Cancel all Local Notification
-  static Future<void> allNotificationCancel() async {
-    await flutterLocalNotificationsPlugin.cancelAll();
   }
 
 //! Callback function when a local notification is selected
@@ -132,8 +122,3 @@ class LocalNotificationServices {
     );
   }
 }
-
-//--------- to make custom sound to notification -----------
-// first put your sound in assets and use it in pubspec.yaml
-// go to android/app/src/main/res  and create file named (raw) and put the same sound in it
-// in AndroidNotificationDetails -> sound: RawResourceAndroidNotificationSound('name of sound').split('.').first()

@@ -13,6 +13,8 @@ import 'package:google_fonts/google_fonts.dart';
 import 'Core/notification/notification_service.dart';
 import 'Core/notification/work_manager_service.dart';
 
+
+final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Future.wait([
@@ -48,6 +50,7 @@ class MyApp extends StatelessWidget {
         return Directionality(
           textDirection: TextDirection.rtl,
           child: MaterialApp(
+            navigatorKey: navigatorKey,
             theme: ThemeData.dark().copyWith(
                 scaffoldBackgroundColor: kBackgroundColor,
                 textTheme: GoogleFonts.cairoTextTheme(
