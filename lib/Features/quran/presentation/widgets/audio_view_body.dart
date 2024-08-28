@@ -1,9 +1,8 @@
-import 'dart:convert';
-
 import 'package:advanced_quran_app/Core/utils/constants.dart';
+import 'package:advanced_quran_app/Core/utils/service_locator.dart';
 import 'package:advanced_quran_app/Features/quran/presentation/view_model/favourite_surah_cubit.dart';
 import 'package:advanced_quran_app/Features/quran/presentation/view_model/quran_audio_player_cubit.dart';
-import 'package:advanced_quran_app/cache/cache_helper.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -41,37 +40,34 @@ class AudoViewBody extends StatelessWidget {
               ),
             ),
             actions: [
-              BlocBuilder<FavouriteSurahCubit, FavouriteSurahState>(
-                builder: (context, state) {
-                  bool ok = CacheHelper.getStringList(key: favouriteSurahKey)
-                      .contains(jsonEncode(object));
-                  return IconButton(
-                    onPressed: () {
-                      if (state == FavouriteSurahState.favourite) {
-                        context.read<FavouriteSurahCubit>().unFavourite(
-                              object: object,
-                            );
-                      } else {
-                        context.read<FavouriteSurahCubit>().favourite(
-                              object: object,
-                            );
-                      }
-                      context
-                          .read<FavouriteSurahCubit>()
-                          .getFavouriteSurahList();
-                    },
-                    icon: ok == true
-                        ? Image.asset(
-                            "assets/images/heart.png",
-                            width: 30.w,
-                          )
-                        : Icon(
-                            Icons.favorite_border_rounded,
-                            size: 27.sp,
-                            color: Colors.white,
-                          ),
-                  );
-                },
+              BlocProvider(
+                create: (context) => getIt<FavouriteSurahCubit>(),
+                child: BlocBuilder<FavouriteSurahCubit, FavouriteSurahState>(
+                  builder: (context, state) {
+                    bool ok = context
+                        .read<FavouriteSurahCubit>()
+                        .getAllFavouriteSurahs()
+                        .any(
+                            (item) => mapEquals<String, dynamic>(item, object));
+                    return IconButton(
+                      onPressed: () {
+                        context
+                            .read<FavouriteSurahCubit>()
+                            .toggleFavourite(surah: object);
+                      },
+                      icon: ok == true
+                          ? Image.asset(
+                              "assets/images/heart.png",
+                              width: 30.w,
+                            )
+                          : Icon(
+                              Icons.favorite_border_rounded,
+                              size: 27.sp,
+                              color: Colors.white,
+                            ),
+                    );
+                  },
+                ),
               ),
               SizedBox(width: 10.w),
             ],
@@ -172,8 +168,8 @@ class AudoViewBody extends StatelessWidget {
                                 backgroundColor: WidgetStatePropertyAll(
                                   kShadeWhite,
                                 ),
-                                padding: WidgetStatePropertyAll(
-                                    EdgeInsets.all(10)),
+                                padding:
+                                    WidgetStatePropertyAll(EdgeInsets.all(10)),
                               ),
                             ),
                             IconButton(

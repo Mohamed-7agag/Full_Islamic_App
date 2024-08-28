@@ -63,8 +63,7 @@ class QuranView extends StatelessWidget {
                                         padding: EdgeInsets.only(right: 30.w),
                                         child: InkWell(
                                           onTap: () {
-                                            if (CacheHelper.getData(
-                                                    key: "mark") ==
+                                            if (CacheHelper.getInt("mark") ==
                                                 intState) {
                                               CacheHelper.removeData(
                                                   key: "mark");
@@ -78,7 +77,7 @@ class QuranView extends StatelessWidget {
                                                 .changeMark();
                                           },
                                           child: Image.asset(
-                                            CacheHelper.getData(key: "mark") !=
+                                            CacheHelper.getInt("mark") !=
                                                     intState
                                                 ? "assets/images/bookmark.png"
                                                 : "assets/images/book-mark(1).png",

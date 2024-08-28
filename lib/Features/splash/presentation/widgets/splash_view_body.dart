@@ -16,7 +16,7 @@ class _SplashViewBodyState extends State<SplashViewBody> {
   void initState() {
     super.initState();
     Future.delayed(const Duration(milliseconds: 1600), () {
-      CacheHelper.getData(key: 'location') == 'done'
+      CacheHelper.getString( 'location') == 'done'
           ? Navigator.pushReplacementNamed(context, Routes.homeViewRoute)
           : Navigator.pushReplacementNamed(
               context, Routes.locationViewRoute);

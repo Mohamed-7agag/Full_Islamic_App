@@ -26,7 +26,7 @@ class ApiServices extends ApiRequests {
   @override
   Future getPrayerTiming({required String year}) async {
     final response = await _dio.get(
-      "$year?latitude=${CacheHelper.getData(key: 'lat').toString()}&longitude=${CacheHelper.getData(key: 'long').toString()}&method=${ApiKey.method}",
+      "$year?latitude=${CacheHelper.getString('lat').toString()}&longitude=${CacheHelper.getString('long').toString()}&method=${ApiKey.method}",
     );
     return response.data;
   }

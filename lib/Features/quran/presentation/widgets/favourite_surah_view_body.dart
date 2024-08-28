@@ -1,3 +1,4 @@
+import 'package:advanced_quran_app/Core/utils/service_locator.dart';
 import 'package:advanced_quran_app/Features/quran/presentation/view_model/favourite_surah_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -42,27 +43,29 @@ class FavouriteSurahViewBody extends StatelessWidget {
         ),
         Padding(
           padding: EdgeInsets.only(left: 15.w, right: 15.w, top: 56.h),
-          child: BlocBuilder<FavouriteSurahCubit, FavouriteSurahState>(
-            builder: (context, state) {
-              List<Map<String, dynamic>> items =
-                  context.read<FavouriteSurahCubit>().getFavouriteSurahList();
-              return items.isEmpty
-                  ? Center(
-                      child: Text(
-                      "لا يوجد تفضيلات",
-                      style: Styles.textStyle20,
-                    ))
-                  : ListView.builder(
-                      itemCount: items.length,
-                      itemBuilder: (BuildContext context, int index) {
-                        return Padding(
+          child: BlocProvider(
+            create: (context) => getIt<FavouriteSurahCubit>(),
+            child: BlocBuilder<FavouriteSurahCubit, FavouriteSurahState>(
+              builder: (context, state) {
+                List<Map<String, dynamic>> items =
+                    context.read<FavouriteSurahCubit>().getAllFavouriteSurahs();
+                return items.isEmpty
+                    ? Center(
+                        child: Text(
+                        "لا يوجد تفضيلات",
+                        style: Styles.textStyle20,
+                      ))
+                    : ListView.builder(
+                        itemCount: items.length,
+                        itemBuilder: (BuildContext context, int index) {
+                          return Padding(
                             padding: EdgeInsets.only(top: 8.h, bottom: 4.h),
-                            child: FavouriteSurahItem(
-                              object: items[index],
-                            ));
-                      },
-                    );
-            },
+                            child: FavouriteSurahItem(object: items[index]),
+                          );
+                        },
+                      );
+              },
+            ),
           ),
         ),
       ],

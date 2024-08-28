@@ -1,3 +1,4 @@
+import 'package:advanced_quran_app/Core/utils/service_locator.dart';
 import 'package:advanced_quran_app/Core/utils/styles.dart';
 import 'package:advanced_quran_app/Features/categories/data/models/categories_model1.dart';
 import 'package:advanced_quran_app/Features/categories/presentation/view_model/favourite_cubit.dart';
@@ -42,27 +43,30 @@ class FavouriteViewBody extends StatelessWidget {
         ),
         Padding(
           padding: EdgeInsets.only(left: 15.w, right: 15.w, top: 56.h),
-          child: BlocBuilder<FavouriteCubit, FavouriteState>(
-            builder: (context, state) {
-              List<CategoriesModel1> items =
-                  context.read<FavouriteCubit>().getFavouriteList();
-              return items.isEmpty
-                  ? Center(
-                      child: Text(
-                      "لا يوجد تفضيلات",
-                      style: Styles.textStyle20,
-                    ))
-                  : ListView.builder(
-                      itemCount: items.length,
-                      itemBuilder: (BuildContext context, int index) {
-                        return Padding(
-                          padding: EdgeInsets.only(top: 8.h, bottom: 4.h),
-                          child: FavouriteListViewItem(
-                              categoriesModel1: items[index]),
-                        );
-                      },
-                    );
-            },
+          child: BlocProvider(
+            create: (context) => getIt<FavouriteCubit>(),
+            child: BlocBuilder<FavouriteCubit, FavouriteState>(
+              builder: (context, state) {
+                List<CategoriesModel1> items =
+                    context.read<FavouriteCubit>().getAllFavouriteCategories();
+                return items.isEmpty
+                    ? Center(
+                        child: Text(
+                        "لا يوجد تفضيلات",
+                        style: Styles.textStyle20,
+                      ))
+                    : ListView.builder(
+                        itemCount: items.length,
+                        itemBuilder: (BuildContext context, int index) {
+                          return Padding(
+                            padding: EdgeInsets.only(top: 8.h, bottom: 4.h),
+                            child: FavouriteListViewItem(
+                                categoriesModel1: items[index]),
+                          );
+                        },
+                      );
+              },
+            ),
           ),
         ),
       ],

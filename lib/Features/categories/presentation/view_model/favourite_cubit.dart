@@ -2,50 +2,56 @@ import 'dart:convert';
 import 'package:advanced_quran_app/Core/utils/constants.dart';
 import 'package:advanced_quran_app/Features/categories/data/models/categories_model1.dart';
 import 'package:advanced_quran_app/cache/cache_helper.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-enum FavouriteState { favourite, unfavourite, getliststate }
+enum FavouriteState { initial, isFavourite, categoryToggle }
 
 class FavouriteCubit extends Cubit<FavouriteState> {
-  FavouriteCubit() : super(FavouriteState.unfavourite);
+  FavouriteCubit() : super(FavouriteState.initial);
 
-  List<String> favouriteList = [];
+  //! Get all favourite categories from cache
+  List<CategoriesModel1> _getFavouriteCategoriesFromCache() {
+    String jsonStr = CacheHelper.getString(favouriteKey);
 
-  void favourite({required CategoriesModel1 categoriesModel1}) {
-    String channelDetailModelStr = json.encode(categoriesModel1.toJson());
-    List<String> savedList = CacheHelper.getStringList(key: favouriteKey);
-    if (!savedList.contains(channelDetailModelStr)) {
-      savedList.add(channelDetailModelStr);
-      favouriteList = savedList;
-      CacheHelper.setData(key: favouriteKey, value: favouriteList);
-      emit(FavouriteState.favourite);
+    if (jsonStr.isEmpty) return [];
+    List<dynamic> favouriteCategories = json.decode(jsonStr);
+    return favouriteCategories
+        .map((item) => CategoriesModel1.fromJson(item))
+        .toList();
+  }
+
+  //! Get all favourite categories
+  List<CategoriesModel1> getAllFavouriteCategories() {
+    return _getFavouriteCategoriesFromCache();
+  }
+
+  //! Check if a category is favourite
+  bool isFavourite(CategoriesModel1 category) {
+    final List<CategoriesModel1> favouriteCategories =
+        _getFavouriteCategoriesFromCache();
+    final bool isFav = favouriteCategories
+        .any((item) => mapEquals(item.toJson(), category.toJson()));
+    emit(FavouriteState.isFavourite);
+    return isFav;
+  }
+
+  //! Toggle favourite status
+  void toggleFavourite({required CategoriesModel1 category}) {
+    List<CategoriesModel1> favouriteCategories =
+        _getFavouriteCategoriesFromCache();
+
+    if (isFavourite(category)) {
+      favouriteCategories.removeWhere(
+          (item) => mapEquals(item.toJson(), category.toJson()));
     } else {
-      String channelDetailModelStr = json.encode(categoriesModel1.toJson());
-      List<String> savedList = CacheHelper.getStringList(key: favouriteKey);
-      savedList.remove(channelDetailModelStr);
-      favouriteList = savedList;
-      CacheHelper.setData(key: favouriteKey, value: favouriteList);
-      emit(FavouriteState.unfavourite);
+      favouriteCategories.add(category);
     }
-  }
 
-  void unFavourite({required CategoriesModel1 categoriesModel1}) {
-    String channelDetailModelStr = json.encode(categoriesModel1.toJson());
-    List<String> savedList = CacheHelper.getStringList(key: favouriteKey);
-    savedList.remove(channelDetailModelStr);
-    favouriteList = savedList;
-    CacheHelper.setData(key: favouriteKey, value: favouriteList);
-    emit(FavouriteState.unfavourite);
-  }
+    final String jsonList =
+        json.encode(favouriteCategories.map((c) => c.toJson()).toList());
+    CacheHelper.setData(key: favouriteKey, value: jsonList);
 
-  List<CategoriesModel1> getFavouriteList() {
-    List<String> savedList = CacheHelper.getStringList(key: favouriteKey);
-
-    List<CategoriesModel1> favouriteList = [];
-    for (var element in savedList) {
-      favouriteList.add(CategoriesModel1.fromJson(json.decode(element)));
-    }
-    emit(FavouriteState.getliststate);
-    return favouriteList;
+    emit(FavouriteState.categoryToggle);
   }
 }

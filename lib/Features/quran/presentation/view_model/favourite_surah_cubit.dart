@@ -1,51 +1,50 @@
 import 'dart:convert';
 import 'package:advanced_quran_app/Core/utils/constants.dart';
 import 'package:advanced_quran_app/cache/cache_helper.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-enum FavouriteSurahState { favourite, unfavourite, getliststate }
+enum FavouriteSurahState { initial, isFavourite, surahToggle }
 
 class FavouriteSurahCubit extends Cubit<FavouriteSurahState> {
-  FavouriteSurahCubit() : super(FavouriteSurahState.unfavourite);
+  FavouriteSurahCubit() : super(FavouriteSurahState.initial);
 
-  List<String> favouriteSurahList = [];
+//! Get all favourite Surahs from cache
+  List<Map<String, dynamic>> _getFavouriteSurahsFromCache() {
+    String jsonStr = CacheHelper.getString(favouriteSurahKey);
 
-  void favourite({required Map<String, dynamic> object}) {
-    String objectStr = json.encode(object);
-    List<String> savedList = CacheHelper.getStringList(key: favouriteSurahKey);
-    if (!savedList.contains(objectStr)) {
-      savedList.add(objectStr);
-      favouriteSurahList = savedList;
-      CacheHelper.setData(key: favouriteSurahKey, value: favouriteSurahList);
-      emit(FavouriteSurahState.favourite);
+    if (jsonStr.isEmpty) return [];
+    List<dynamic> favouriteSurahs = json.decode(jsonStr);
+    return favouriteSurahs.cast<Map<String, dynamic>>();
+  }
+
+//! Get all favourite Surahs
+  List<Map<String, dynamic>> getAllFavouriteSurahs() {
+    return _getFavouriteSurahsFromCache();
+  }
+
+//! Check if a Surah is favourite
+  bool isFavourite(Map<String, dynamic> surah) {
+    final List<Map<String, dynamic>> favouriteSurahs =
+        _getFavouriteSurahsFromCache();
+    final bool isFav = favouriteSurahs.any((item) => mapEquals<String, dynamic>(item, surah));
+    emit(FavouriteSurahState.isFavourite);
+    return isFav;
+  }
+
+//! Toggle favourite status
+  void toggleFavourite({required Map<String, dynamic> surah}) {
+    List<Map<String, dynamic>> favouriteSurahs = _getFavouriteSurahsFromCache();
+
+    if (isFavourite(surah)) {
+      favouriteSurahs.removeWhere((item) => mapEquals(item, surah));
     } else {
-      String objectStr = json.encode(object);
-      List<String> savedList =
-          CacheHelper.getStringList(key: favouriteSurahKey);
-      savedList.remove(objectStr);
-      favouriteSurahList = savedList;
-      CacheHelper.setData(key: favouriteSurahKey, value: favouriteSurahList);
-      emit(FavouriteSurahState.unfavourite);
+      favouriteSurahs.add(surah);
     }
-  }
 
-  void unFavourite({required Map<String, dynamic> object}) {
-    String objectStr = json.encode(object);
-    List<String> savedList = CacheHelper.getStringList(key: favouriteSurahKey);
-    savedList.remove(objectStr);
-    favouriteSurahList = savedList;
-    CacheHelper.setData(key: favouriteSurahKey, value: favouriteSurahList);
-    emit(FavouriteSurahState.unfavourite);
-  }
+    final String jsonList = json.encode(favouriteSurahs);
+    CacheHelper.setData(key: favouriteSurahKey, value: jsonList);
 
-  List<Map<String, dynamic>> getFavouriteSurahList() {
-    List<String> savedList = CacheHelper.getStringList(key: favouriteSurahKey);
-
-    List<Map<String, dynamic>> favouriteList = [];
-    for (var element in savedList) {
-      favouriteList.add(json.decode(element));
-    }
-    emit(FavouriteSurahState.getliststate);
-    return favouriteList;
+    emit(FavouriteSurahState.surahToggle);
   }
 }

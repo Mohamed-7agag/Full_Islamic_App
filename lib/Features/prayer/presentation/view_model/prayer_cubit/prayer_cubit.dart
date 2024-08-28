@@ -27,7 +27,7 @@ class PrayerCubit extends Cubit<PrayerState> {
 
   void loadPrayerTimings({required String year}) {
     List<String> jsonStr =
-        CacheHelper.getStringList(key: 'prayerTimings_$year');
+        CacheHelper.getStringList('prayerTimings_$year');
 
     if (jsonStr.isNotEmpty) {
       List<PrayerModel> items = jsonStr

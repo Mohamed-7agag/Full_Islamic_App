@@ -55,7 +55,7 @@ class QuranCategoryViewBody extends StatelessWidget {
                                 Navigator.pushNamed(
                                     context, Routes.quranViewRoute,
                                     arguments:
-                                        CacheHelper.getData(key: "mark"));
+                                        CacheHelper.getInt("mark"));
                               }
                             } else {
                               if (context.mounted) {

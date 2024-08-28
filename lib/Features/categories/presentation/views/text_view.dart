@@ -1,10 +1,10 @@
-import 'dart:convert';
 
 import 'package:advanced_quran_app/Core/utils/constants.dart';
+import 'package:advanced_quran_app/Core/utils/service_locator.dart';
 import 'package:advanced_quran_app/Core/utils/styles.dart';
 import 'package:advanced_quran_app/Features/categories/data/models/categories_model1.dart';
 import 'package:advanced_quran_app/Features/categories/presentation/view_model/favourite_cubit.dart';
-import 'package:advanced_quran_app/cache/cache_helper.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -55,35 +55,33 @@ class TextView extends StatelessWidget {
                         size: 25.sp,
                         color: Colors.white,
                       )),
-                  BlocBuilder<FavouriteCubit, FavouriteState>(
-                    builder: (context, state) {
-                      bool ok = CacheHelper.getStringList(key: favouriteKey)
-                          .contains(json.encode(categoriesModel1.toJson()));
-                      return IconButton(
-                        onPressed: () {
-                          if (state == FavouriteState.favourite) {
-                            context.read<FavouriteCubit>().unFavourite(
-                                  categoriesModel1: categoriesModel1,
-                                );
-                          } else {
-                            context.read<FavouriteCubit>().favourite(
-                                  categoriesModel1: categoriesModel1,
-                                );
-                          }
-                          context.read<FavouriteCubit>().getFavouriteList();
-                        },
-                        icon: ok == true
-                            ? Image.asset(
-                                "assets/images/heart.png",
-                                width: 30.w,
-                              )
-                            : Icon(
-                                Icons.favorite_border_rounded,
-                                size: 27.sp,
-                                color: Colors.white,
-                              ),
-                      );
-                    },
+                  BlocProvider(
+                    create: (context) => getIt<FavouriteCubit>(),
+                    child: BlocBuilder<FavouriteCubit, FavouriteState>(
+                      builder: (context, state) {
+                        bool ok = context
+                            .read<FavouriteCubit>()
+                            .getAllFavouriteCategories()
+                            .any((item) => mapEquals(item.toJson(), categoriesModel1.toJson()));
+                        return IconButton(
+                          onPressed: () {
+                            context
+                                .read<FavouriteCubit>()
+                                .toggleFavourite(category: categoriesModel1);
+                          },
+                          icon: ok == true
+                              ? Image.asset(
+                                  "assets/images/heart.png",
+                                  width: 30.w,
+                                )
+                              : Icon(
+                                  Icons.favorite_border_rounded,
+                                  size: 27.sp,
+                                  color: Colors.white,
+                                ),
+                        );
+                      },
+                    ),
                   ),
                   SizedBox(width: 10.w),
                 ],

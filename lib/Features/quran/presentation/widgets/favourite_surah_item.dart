@@ -14,8 +14,11 @@ class FavouriteSurahItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-        Navigator.pushNamed(context, Routes.audioViewRoute,
-            arguments: object);
+        Navigator.pushReplacementNamed(
+          context,
+          Routes.audioViewRoute,
+          arguments: object,
+        );
       },
       child: Container(
         width: double.infinity,
@@ -27,20 +30,16 @@ class FavouriteSurahItem extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            BlocBuilder<FavouriteSurahCubit, FavouriteSurahState>(
-              builder: (context, state) {
-                return InkWell(
-                  onTap: () {
-                    context
-                        .read<FavouriteSurahCubit>()
-                        .unFavourite(object: object);
-                  },
-                  child: Image.asset(
-                    "assets/images/dislike.png",
-                    width: 30.w,
-                  ),
-                );
+            InkWell(
+              onTap: () {
+                context
+                    .read<FavouriteSurahCubit>()
+                    .toggleFavourite(surah: object);
               },
+              child: Image.asset(
+                "assets/images/dislike.png",
+                width: 30.w,
+              ),
             ),
             Column(
               crossAxisAlignment: CrossAxisAlignment.end,

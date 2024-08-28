@@ -15,7 +15,7 @@ class FavouriteListViewItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-        Navigator.pushNamed(context, Routes.textViewRoute,
+        Navigator.pushReplacementNamed(context, Routes.textViewRoute,
             arguments: categoriesModel1);
       },
       child: Container(
@@ -27,21 +27,17 @@ class FavouriteListViewItem extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            BlocBuilder<FavouriteCubit, FavouriteState>(
-              builder: (context, state) {
-                return InkWell(
+            InkWell(
                   onTap: () {
-                    context.read<FavouriteCubit>().unFavourite(
-                          categoriesModel1: categoriesModel1,
+                    context.read<FavouriteCubit>().toggleFavourite(
+                          category: categoriesModel1,
                         );
                   },
                   child: Image.asset(
                     "assets/images/dislike.png",
                     width: 30.w,
                   ),
-                );
-              },
-            ),
+                ),
             Expanded(
               child: Text(
                 categoriesModel1.number!,
